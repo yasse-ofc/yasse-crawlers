@@ -1,13 +1,13 @@
 -- PT --
 
-https://mangalivre.net
-https://tsundoku.com.br/mangas/
-https://mangahosted.com/
-https://brmangas.net
 https://mangatoon.mobi/pt
-https://mangavibe.top
-https://unionleitor.top
 https://www.animexnovel.com/
+https://tsundoku.com.br/mangas/
+PARTIALLY DONE https://brmangas.net
+PARTIALLY DONE https://mangahosted.com/
+WIP PUPPETEER https://mangalivre.net
+WIP PUPPETEER https://mangavibe.top
+WIP PUPPETEER https://unionleitor.top
 
 -- EN --
 
