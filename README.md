@@ -2,7 +2,7 @@
 
 ---
 
-An webpage which searches through the most popular manga readers in Brazil to find the most updated one for a specific manga.
+An webapp which searches through the most popular manga readers in Brazil to find the most updated one for a specific manga.
 
 Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosialdo Vidinho](https://github.com/Rosialdo) (FRONTEND).
 
@@ -28,6 +28,7 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 - 🚧 Creating DB to store links for each manga
 - 🚧 Searching for most relevant manga sites to include
 - 🚧 Deciding whether the app will always update the DB or just weekly
+- 🚧 Deciding whether the app will support manga both in english and portuguese
 
 - ❌ Read manga through site.
   - It will only redirect the user to another manga site.
