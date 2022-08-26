@@ -1,5 +1,6 @@
 const brmangas_scraper = require('./brmangas_scraper');
 const mangahost_scraper = require('./mangahost_scraper');
+const mangatoon_scraper = require('./mangatoon_scraper');
 
 let tags = {
     'language': 'pt', // It may be en as well
@@ -10,6 +11,7 @@ if (tags.language === 'pt') {
     if (tags.media === 'manga') {
         brmangas_scraper();
         mangahost_scraper();
+        mangatoon_scraper();
     } else if (tags.media === 'anime') {
 
     } else if (tags.media === 'novel') {
