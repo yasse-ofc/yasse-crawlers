@@ -1,6 +1,11 @@
-const brmangas_scraper = require('./brmangas_scraper');
-const mangahost_scraper = require('./mangahost_scraper');
-const mangatoon_scraper = require('./mangatoon_scraper');
+require('dotenv').config();
+const { MongoClient } = require("mongodb");
+const brmangas_scraper = require('./crawlers/brmangas_scraper');
+const mangahost_scraper = require('./crawlers/mangahost_scraper');
+const mangatoon_scraper = require('./crawlers/mangatoon_scraper');
+
+const url = `mongodb+srv://adm:${process.env.MONGODB_PASS}@search-engine-db.sullvzo.mongodb.net/?retryWrites=true&w=majority`;
+const dbName = 'search-engine-db';
 
 async function updateDB() {
     brmangas_scraper();
@@ -8,28 +13,4 @@ async function updateDB() {
     mangatoon_scraper();
 }
 
-let tags = {
-    'language': 'pt', // It may be en as well
-    'media': 'manga', // It may be anime, novel or webtoon as well
-}
-
-if (tags.language === 'pt') {
-    if (tags.media === 'manga') {
-    } else if (tags.media === 'anime') {
-
-    } else if (tags.media === 'novel') {
-
-    } else if (tags.media === 'webtoon') {
-
-    }
-} else if (tags.language === 'en') {
-    if (tags.media === 'manga') {
-
-    } else if (tags.media === 'anime') {
-
-    } else if (tags.media === 'novel') {
-
-    } else if (tags.media === 'webtoon') {
-
-    }
-}
+updateDB();
