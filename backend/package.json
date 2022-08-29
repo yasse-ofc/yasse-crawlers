@@ -16,14 +16,12 @@
       "url": "https://github.com/Rosialdo"
     }
   ],
-  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ed-henrique/manga-br-search-engine"
   },
   "scripts": {
-    "start": "node ./index.js",
-    "brmangas": "node ./brmangas_scraper.js"
+    "update_db": "node ./update_db.js"
   },
   "dependencies": {
     "axios": "^0.27.2",

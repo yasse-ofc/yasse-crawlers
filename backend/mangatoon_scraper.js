@@ -20,8 +20,8 @@ async function mangatoon_scraper() {
         console.log('[MANGATOON] Getting Manga...');
         
         let tmp = cheerio.load(await session.get(url_domain + i).then(response => response.data));
-        
-        while (tmp('.items a') != undefined) {
+
+        while (tmp('.items a').html() != null) {
             manga = await manga.concat(tmp('.items a').map((i, el) => {
                 const title = tmp(el).children().find('.content-title').text();
                 const href = 'https://mangatoon.mobi' + tmp(el).attr('href');
@@ -33,11 +33,9 @@ async function mangatoon_scraper() {
                     'img': img,
                 }
             }).get());
-
+            
             tmp = cheerio.load(await session.get(url_domain + i).then(response => response.data));
             i++;
-
-            console.log(manga);
         }
 
         console.log('[MANGATOON] Getting Manga DONE.');
