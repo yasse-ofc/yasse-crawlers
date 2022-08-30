@@ -34,9 +34,12 @@ async function brmangas_scraper() {
                     'img': img,
                 }
             }).get());
+
         }
         
         console.log('[BRMANGAS] Getting Manga DONE.');
+        return manga;
+    
     } catch (error) {
         console.error(error);
         throw error;
