@@ -2,10 +2,10 @@ const dotenv = require('dotenv').config();
 const { MongoClient } = require("mongodb");
 
 // MANGA
-const brmangas_scraper = require('./crawlers/brmangas_scraper');
-const mangahost_scraper = require('./crawlers/mangahost_scraper');
-const mangatoon_scraper = require('./crawlers/mangatoon_scraper');
-const manganato_scraper = require('./crawlers/manganato_scraper');
+const brmangas_scraper = require('./crawlers/manga/brmangas_scraper');
+const mangahost_scraper = require('./crawlers/manga/mangahost_scraper');
+const mangatoon_scraper = require('./crawlers/manga/mangatoon_scraper');
+const manganato_scraper = require('./crawlers/manga/manganato_scraper');
 
 const url = `mongodb+srv://adm:${process.env.MONGODB_PASS}@search-engine-db.q0ish8y.mongodb.net/?retryWrites=true&w=majority`;
 const dbName = 'search-engine-db';
@@ -15,11 +15,8 @@ async function updateDB() {
     const db = client.db(dbName);
     let collection = db.collection("manga");
     
-    let current_list = []
-
     // MANGA
-    current_list = await brmangas_scraper();
-    await collection.insertMany(current_list);
+    await collection.insertMany(await brmangas_scraper());
     //await collection.insertMany(mangahost_scraper());
     //await collection.insertMany(mangatoon_scraper());
     //await collection.insertMany(manganato_scraper());
@@ -52,8 +49,8 @@ async function deleteDB() {
     }
 
     console.log('Deleting collections DONE');
-    return;
 }
 
-//deleteDB();
-updateDB();
+deleteDB()
+    .then((res) => { console.log(res) })
+    .catch((err) => { console.log(err) });
