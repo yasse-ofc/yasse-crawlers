@@ -11,30 +11,23 @@ const mangalivre_scraper = require('./crawlers/manga/mangalivre_scraper');
 const url = `mongodb+srv://adm:${process.env.MONGODB_PASS}@search-engine-db.q0ish8y.mongodb.net/?retryWrites=true&w=majority`;
 const dbName = 'search-engine-db';
 
-async function updateDB() {
+async function createDB() {
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
+
     let collection = db.collection("manga");
     
-    // MANGA
-    await mangalivre_scraper(collection);
-    //await collection.insertMany(await mangalivre_scraper(collection));
-    //await collection.insertMany(await brmangas_scraper());
-    //await collection.insertMany(mangahost_scraper());
-    //await collection.insertMany(mangatoon_scraper());
-    //await collection.insertMany(manganato_scraper());
+    await mangatoon_scraper(collection);  // TEST THIS (URGENT)
+    await brmangas_scraper(collection);   // TEST THIS
+    await mangahost_scraper(collection);  // TEST THIS
+    await manganato_scraper(collection);  // TEST THIS
+    await mangalivre_scraper(collection); // TESTED
 
     collection = db.collection("novel");
 
-    // NOVEL
-
     collection = db.collection("anime");
 
-    // ANIME
-
     collection = db.collection("webtoon");
-
-    // WEBTOON
 
     client.close();
 }
@@ -50,12 +43,12 @@ async function deleteDB() {
     for (let i = 0; i < collections.length; i++) {
         let collection = db.collection(collections[i]);
         await collection.deleteMany({});
-        console.log('Deleted ' + collections[i] + '...');
+        console.log('Deleted ' + collections[i].replace(/^\w/, c => c.toUpperCase()) + '...');
     }
     
     console.log('Deleting collections DONE');
     client.close();
 }
 
-updateDB();
+//createDB();
 //deleteDB();

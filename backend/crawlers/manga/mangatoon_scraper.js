@@ -1,9 +1,8 @@
-// DOES NOT REQUIRE PUPPETEER
-
 module.exports = mangatoon_scraper;
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const mongodb = require("mongodb");
 
 const url_domain = 'https://mangatoon.mobi/pt/genre/comic?page=';
 
@@ -12,17 +11,16 @@ const session = axios.create({
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 });
 
-async function mangatoon_scraper() {
+async function mangatoon_scraper(collection) {
     try {
         let i = 1;
-        let manga = [];
 
-        console.log('[MANGATOON] Getting Manga...');
-        
+        console.log('[+][MANGATOON] Getting Series...');
+
         let tmp = cheerio.load(await session.get(url_domain + i).then(response => response.data));
 
-        while (tmp('.items a').html() != null) {
-            manga = await manga.concat(tmp('.items a').map((i, el) => {
+        while (tmp('.items a').html() !== null) {
+            collection.insertMany(tmp('.items a').map((i, el) => {
                 const title = tmp(el).children().find('.content-title').text();
                 const href = 'https://mangatoon.mobi' + tmp(el).attr('href');
                 const img = tmp(el).children().find('img').attr('src');
@@ -35,14 +33,17 @@ async function mangatoon_scraper() {
             }).get());
             
             tmp = cheerio.load(await session.get(url_domain + i).then(response => response.data));
+            
+            let page_sing_or_plural = (i == 1) ? 'page' : 'pages';
+            console.log(`[+][MANGATOON] ${i} ${page_sing_or_plural} processed.`);
+            
             i++;
         }
 
-        console.log('[MANGATOON] Getting Manga DONE.');
-        return manga;
+        console.log('[+][MANGATOON] Got All Series.');
         
     } catch (error) {
+        console.log('[-][MANGATOON] Error.');
         console.error(error);
-        throw error;
     }
 }
