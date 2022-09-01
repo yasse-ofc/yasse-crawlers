@@ -24,14 +24,27 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 
 ❌ means won't do.
 
-- 🚧 Creating crawler to search through sites
-- 🚧 Creating DB to store links for each manga
-- 🚧 Searching for most relevant manga sites to include
-- 🚧 Deciding whether the app will always update the DB or just weekly
-- 🚧 Deciding whether the app will support manga both in english and portuguese
+- ✅ Created the crawlers for the following sites:
+  - [Mangalivre](https://mangalivre.net)
+  - [BRMangas](https://brmangas.net)
+  - [MangaHost](https://mangahosted.com)
+  - [MangaToon](https://mangatoon.mobi)
+- ✅ Created DB (MongoDB)
+- ✅ Using Puppeteer for JS Rendering
+- ✅ Created list of relevant sites to use
 
-- ❌ Read manga through site.
-  - It will only redirect the user to another manga site.
+&nbsp;
+
+- 🚧 Creating crawlers for a lot of sites
+- 🚧 Creating frontend for the site using React
+- 🚧 Creating an API using Express so the user can read from DB without having access to it
+
+&nbsp;
+
+- ❌ Read manga through site
+  - It will only redirect the user to another manga site
+- ❌ Update DB daily
+  - We are deciding if this is viable right now, but as it is, it will hinder our progress, so we will postpone this feature
 
 ---
 
@@ -39,15 +52,23 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 
 ### Problems
 
-1. **Based on past projects, Cloudflare may or may not be a problem;**
+1. Updating DB daily;
+2. Only updating DB after going through every series in a site;
+3. Updating DB without reconstructing it from scratch;
 
 Possible Solutions:
 
-1. Use some heavy trickery with Puppeteer to get around it;
+1. Make the update process faster and less resource-heavy;
+2. Update for every visited page in the site;
+3. Only update series that changed values;
 
 ### Solved Problems
 
-None yet.
+1. Bypassing Cloudflare;
+
+Solutions:
+
+1. Using Puppeteer Stealth Plugin;
 
 ---
 
