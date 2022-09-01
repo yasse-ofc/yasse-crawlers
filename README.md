@@ -53,22 +53,22 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 ### Problems
 
 1. Updating DB daily;
-2. Only updating DB after going through every series in a site;
-3. Updating DB without reconstructing it from scratch;
+2. Updating DB without reconstructing it from scratch;
 
 Possible Solutions:
 
 1. Make the update process faster and less resource-heavy;
-2. Update for every visited page in the site;
-3. Only update series that changed values;
+2. Only update series that changed values;
 
 ### Solved Problems
 
 1. Bypassing Cloudflare;
+2. Only updating DB after going through every series in a site;
 
 Solutions:
 
 1. Using Puppeteer Stealth Plugin;
+2. Update for every visited page in the site;
 
 ---
 
