@@ -4,6 +4,7 @@ module.exports = mangalivre_scraper;
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const mongodb = require("mongodb");
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 
@@ -16,12 +17,11 @@ const session = axios.create({
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 });
 
-async function mangalivre_scraper() {
+async function mangalivre_scraper(collection) {
     try {
         let i = 1;
-        let manga = [];
 
-        console.log('[MANGALIVRE] Getting Series...');
+        console.log('[+][MANGALIVRE] Getting Series...');
 
         await puppeteer.launch({ headless: true }).then(async browser => {
             const page = await browser.newPage();
@@ -32,37 +32,24 @@ async function mangalivre_scraper() {
 
                 let tmp = cheerio.load(await page.content());
 
-                if (tmp('.content-wrapper').find('h1').text() == '404') {
-                    break;
-                }
+                if (tmp('.content-wrapper').find('h1').text() == '404') break;
                 
-                if (tmp('.full-series-list .seriesList > li').html() === null) {
-                    manga = await manga.concat(tmp('.seriesList > li').map((i, el) => {
-                        const title = tmp(el).children().find('.series-title h1').text();
-                        const href = 'https://mangalivre.net' + tmp(el).children().attr('href');
-                        const img = tmp(el).children().find('.cover-image').attr('style').slice(23, -3);
-    
-                        return {
-                            'title': title,
-                            'href': href,
-                            'img': img,
-                        }
-                    }).get());
-                } else {
-                    manga = await manga.concat(tmp('.full-series-list .seriesList > li').map((i, el) => {
-                        const title = tmp(el).children().find('.series-title h1').text();
-                        const href = 'https://mangalivre.net' + tmp(el).children().attr('href');
-                        const img = tmp(el).children().find('.cover-image').attr('style').slice(23, -3);
-    
-                        return {
-                            'title': title,
-                            'href': href,
-                            'img': img,
-                        }
-                    }).get());
-                }
+                let class_to_scrape = (tmp('.full-series-list .seriesList > li').html() === null) ? '.seriesList > li' : '.full-series-list .seriesList > li';
                 
-                console.log(`[+][MANGALIVRE] ${i} pages processed.`)
+                collection.insertMany(tmp(class_to_scrape).map((i, el) => {
+                    const title = tmp(el).children().find('.series-title h1').text().trim();
+                    const href = 'https://mangalivre.net' + tmp(el).children().attr('href');
+                    const img = tmp(el).children().find('.cover-image').attr('style').slice(23, -3);
+                    
+                    return {
+                        'title': title,
+                        'href': href,
+                        'img': img,
+                    }
+                }).get());
+                
+                let page_sing_or_plural = (i == 1) ? 'page' : 'pages';
+                console.log(`[+][MANGALIVRE] ${i} ${page_sing_or_plural} processed.`)
 
                 i++;
             }
@@ -71,10 +58,9 @@ async function mangalivre_scraper() {
         });
                 
         console.log('[+][MANGALIVRE] Got All Series.');
-        return manga;
 
     } catch (error) {
+        console.log('[-][MANGALIVRE] Error.');
         console.error(error);
-        throw error;
     }
 }

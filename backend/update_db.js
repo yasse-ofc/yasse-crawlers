@@ -17,7 +17,8 @@ async function updateDB() {
     let collection = db.collection("manga");
     
     // MANGA
-    await collection.insertMany(await mangalivre_scraper());
+    await mangalivre_scraper(collection);
+    //await collection.insertMany(await mangalivre_scraper(collection));
     //await collection.insertMany(await brmangas_scraper());
     //await collection.insertMany(mangahost_scraper());
     //await collection.insertMany(mangatoon_scraper());
@@ -34,14 +35,16 @@ async function updateDB() {
     collection = db.collection("webtoon");
 
     // WEBTOON
+
+    client.close();
 }
 
 async function deleteDB() {
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
-
+    
     collections = ['manga', 'novel', 'webtoon', 'anime'];
-
+    
     console.log('Started deleting...');
     
     for (let i = 0; i < collections.length; i++) {
@@ -49,8 +52,9 @@ async function deleteDB() {
         await collection.deleteMany({});
         console.log('Deleted ' + collections[i] + '...');
     }
-
+    
     console.log('Deleting collections DONE');
+    client.close();
 }
 
 updateDB();
