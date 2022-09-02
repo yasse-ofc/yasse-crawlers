@@ -6,9 +6,9 @@ import SelectionBar from './components/SelectionBar/SelectionBar';
 function App() {
   return (
     <div className="App">
+     <SelectionBar />
      <SearchBar /> 
      <SearchResult />
-     <SelectionBar />
     </div>
   );
 }

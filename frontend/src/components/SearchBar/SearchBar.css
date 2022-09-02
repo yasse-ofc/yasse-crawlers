@@ -1,12 +1,27 @@
 .SearchBar {
-    top: 150px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: black 3px solid;
+
     color: white;
-    border-radius: 5px;
-    position: absolute;
-    width: 200px;
-    padding: 10px;
-    background: #54eaea;
+    border-radius: 50px;
+    margin-top: 8px;
+    width: 400px;
+    height: 50px;
+    background: #D96A6A;
 }
+
+.input-search {
+
+    color: white;
+    border-radius: 50px;
+    width: 340px;
+    height: 50px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0 30px;
+
+}
+
+::placeholder {
+    color: white;
+}
+
