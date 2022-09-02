@@ -4,7 +4,6 @@ const { MongoClient } = require("mongodb");
 // MANGA
 const brmangas_scraper = require('./crawlers/manga/brmangas_scraper');
 const mangahost_scraper = require('./crawlers/manga/mangahost_scraper');
-const mangatoon_scraper = require('./crawlers/manga/mangatoon_scraper');
 const manganato_scraper = require('./crawlers/manga/manganato_scraper');
 const mangalivre_scraper = require('./crawlers/manga/mangalivre_scraper');
 
@@ -17,11 +16,10 @@ async function createDB() {
 
     let collection = db.collection("manga");
     
-    await mangatoon_scraper(collection);  // TEST THIS (URGENT)
-    await brmangas_scraper(collection);   // TEST THIS
-    await mangahost_scraper(collection);  // TEST THIS
     await manganato_scraper(collection);  // TEST THIS
-    await mangalivre_scraper(collection); // TESTED
+    //await brmangas_scraper(collection);   // TEST THIS
+    //await mangahost_scraper(collection);  // TEST THIS
+    //await mangalivre_scraper(collection); // TESTED
 
     collection = db.collection("novel");
 

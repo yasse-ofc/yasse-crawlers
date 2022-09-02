@@ -35,6 +35,8 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 
 &nbsp;
 
+- 🚧 Use proxies
+- 🚧 Change crawler structure
 - 🚧 Creating crawlers for a lot of sites
 - 🚧 Creating frontend for the site using React
 - 🚧 Creating an API using Express so the user can read from DB without having access to it
