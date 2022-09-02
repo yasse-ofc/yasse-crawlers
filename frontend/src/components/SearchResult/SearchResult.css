@@ -1,12 +1,10 @@
 .SearchResult {
 
-    margin: 0 50%;
-    transform: translate(-50%, -50%);
-    border: black 3px solid;
     color: white;
-    border-radius: 5px;
-    width: 150px;
-    padding: 10px;
-    background: violet;   
+    margin-top: 8px;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    background: #D96A6A;   
 }
 
