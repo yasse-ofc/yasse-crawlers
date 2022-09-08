@@ -10,7 +10,7 @@ const url_domain = 'https://mangahosted.com/mangas/page/';
 async function scrap_page(page, collection) {
     const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
             
-    collection.insertMany(tmp('.w-col-3').map((i, el) => {
+    await collection.insertMany(tmp('.w-col-3').map((i, el) => {
         const title = tmp(el).children().find('.manga-block-title-link').attr('title');
         const href = tmp(el).children().find('.manga-block-title-link').attr('href');
         const img = tmp(el).children().find('.manga-block-img-img').attr('src');

@@ -1,6 +1,5 @@
 module.exports = brmangas_scraper;
 
-require('dotenv').config();
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { session } = require('../../config/default_session');

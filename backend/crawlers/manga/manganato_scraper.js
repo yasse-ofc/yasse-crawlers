@@ -3,43 +3,47 @@ module.exports = manganato_scraper;
 const axios = require('axios');
 const cheerio = require('cheerio');
 const mongodb = require("mongodb");
+const { session } = require('../../config/default_session');
 
 const url_domain = 'https://manganato.com/genre-all/';
 
-const session = axios.create({
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-});
+async function scrap_page(page, collection) {
+    const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
+            
+    await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
+        const title = tmp(el).children().find('a').attr('title');
+        const href = tmp(el).children().find('a').attr('href');
+        const img = tmp(el).children().find('a img').attr('src');
+        
+        return {
+            'title': title,
+            'href': href,
+            'img': img,
+        }
+    }).get());
+}
 
 async function manganato_scraper(collection) {
     try {
-        let manga = [];
-
-        const tmp = cheerio.load(await session.get(url_domain + '1/').then(response => response.data));
-        const max_page_count = parseInt(tmp('.group-page a').eq(-1).attr('href').split('/').pop());
+        let i = 1;
+        const max_page_count = parseInt(
+            cheerio.load(await session.get(url_domain + i)
+            .then(response => response.data))('.group-page a')
+            .eq(-1).attr('href').split('/').pop()
+        );
         
         console.log('[+][MANGANATO] Getting Series...');
         
-        for (let i = 1; i < max_page_count; i++) {
-            let tmp2 = cheerio.load(await session.get(url_domain + i).then(response => response.data));
-            
-            //collection.insertMany(tmp2('.panel-content-genres .content-genres-item').map((i, el) => {
-            manga = manga.concat(tmp2('.panel-content-genres .content-genres-item').map((i, el) => {
-                const title = tmp2(el).children().find('a').attr('title');
-                const href = tmp2(el).children().find('a').attr('href');
-                const img = tmp2(el).children().find('a img').attr('src');
-                
-                return {
-                    'title': title,
-                    'href': href,
-                    'img': img,
-                }
-            }).get());
+        while (i < max_page_count) {
+            let promises = [];
+            for (let j = i; j < i + 10 && j <= max_page_count; j++) promises.push(j);
 
-            console.log(manga);
+            await Promise.all(promises.map(promise => scrap_page(promise, collection)));
 
-            let page_sing_or_plural = (i == 1) ? 'page' : 'pages';
-            console.log(`[+][MANGANATO] ${i} ${page_sing_or_plural} processed.`);
+            let page = (i + 9 > max_page_count) ? max_page_count : i + 9;
+            console.log(`[+][MANGANATO] ${page}/${max_page_count} pages processed.`);
+
+            i += 10;
         }
 
         console.log('[+][MANGANATO] Got All Series.');
