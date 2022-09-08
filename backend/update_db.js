@@ -17,9 +17,9 @@ async function createDB() {
     let collection = db.collection("manga");
     
     await Promise.all([
-        brmangas_scraper(collection)
+        //brmangas_scraper(collection),
         //manganato_scraper(collection),
-        //mangahost_scraper(collection),
+        mangahost_scraper(collection),
         //mangalivre_scraper(collection),
     ]);
 
