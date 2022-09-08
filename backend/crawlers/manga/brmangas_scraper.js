@@ -8,11 +8,7 @@ const { session } = require('../../config/default_session');
 const url_domain = 'https://www.brmangas.net/lista-de-manga/page/';
 
 async function scrap_page(page, collection) {
-    const tmp = cheerio.load(
-        await setTimeout(
-        session.get(url_domain + page).then(response => response.data),
-        Math.floor(Math.random() * 5001 + 5000)
-    ));
+    const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
             
     await collection.insertMany(tmp('.item').map((i, el) => {
         const title = tmp(el).children().attr('title').slice(0, -7);
