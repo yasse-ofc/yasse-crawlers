@@ -50,5 +50,5 @@ async function deleteDB() {
     client.close();
 }
 
-createDB();
-//deleteDB();
+if (process.argv[2] == 'create') createDB();
+else if (process.argv[2] == 'delete') deleteDB();
