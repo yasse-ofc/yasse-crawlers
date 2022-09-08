@@ -25,21 +25,28 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 ❌ means won't do.
 
 - ✅ Created the crawlers for the following sites:
-  - [Mangalivre](https://mangalivre.net)
   - [BRMangas](https://brmangas.net)
-  - [MangaHost](https://mangahosted.com)
-  - [MangaToon](https://mangatoon.mobi)
+  - [MangaHost](https://mangahosted.com) (WIP)
+  - [MangaToon](https://mangatoon.mobi) (WIP)
+  - [Mangalivre](https://mangalivre.net) (WIP)
+- ✅ Use proxies
 - ✅ Created DB (MongoDB)
+- ✅ Send multiple requests at once
 - ✅ Using Puppeteer for JS Rendering
 - ✅ Created list of relevant sites to use
 
 &nbsp;
 
-- 🚧 Use proxies
+- 🚧 Create backup DB
+- 🚧 Update DB on demand
 - 🚧 Change crawler structure
+- 🚧 Set random timer to requests
+- 🚧 Integrate backend and frontend
 - 🚧 Creating crawlers for a lot of sites
+- 🚧 Create search bar to take user input
 - 🚧 Creating frontend for the site using React
-- 🚧 Creating an API using Express so the user can read from DB without having access to it
+- 🚧 Create responsive dropdown menu for series type selection
+- 🚧 Creating an RESTful API using Express so the user can read from DB without having access to it
 
 &nbsp;
 

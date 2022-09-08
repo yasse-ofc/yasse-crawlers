@@ -16,10 +16,12 @@ async function createDB() {
 
     let collection = db.collection("manga");
     
-    await manganato_scraper(collection);  // TEST THIS
-    //await brmangas_scraper(collection);   // TEST THIS
-    //await mangahost_scraper(collection);  // TEST THIS
-    //await mangalivre_scraper(collection); // TESTED
+    await Promise.all([
+        brmangas_scraper(collection)
+        //manganato_scraper(collection),
+        //mangahost_scraper(collection),
+        //mangalivre_scraper(collection),
+    ]);
 
     collection = db.collection("novel");
 
@@ -34,7 +36,7 @@ async function deleteDB() {
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
     
-    collections = ['manga', 'novel', 'webtoon', 'anime'];
+    collections = ['manga', 'novel', 'webtoon', 'anime', 'test'];
     
     console.log('Started deleting...');
     
@@ -48,5 +50,5 @@ async function deleteDB() {
     client.close();
 }
 
-//createDB();
+createDB();
 //deleteDB();

@@ -49,5 +49,3 @@ async function manganato_scraper(collection) {
         console.error(error);
     }
 }
-
-manganato_scraper();
