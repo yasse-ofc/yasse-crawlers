@@ -48,6 +48,7 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 - 🚧 Create search bar to take user input
 - 🚧 Creating frontend for the site using React
 - 🚧 Create responsive dropdown menu for series type selection
+- 🚧 Creating a proxy pool with auto renew to avoid Cloudflare blocking
 - 🚧 Creating an RESTful API using Express so the user can read from DB without having access to it
 
 &nbsp;
