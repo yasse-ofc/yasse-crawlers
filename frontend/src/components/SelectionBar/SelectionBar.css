@@ -1,5 +1,26 @@
 .SelectionBar {
+    width: 400px;
+    color: white;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.section1 {
+
+    background: #A60825;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 7px;
+    height: 50px;
+    border-radius: 50px;
+    width: 280px;
+}
+
+.section2 {
+
+    background: #D9C771;
+    display: inline-block;
+    border-radius: 50px;
+    height: 50px;
     width: 100px;
-    margin: 150px 50%;
-    padding: 15px;
 }

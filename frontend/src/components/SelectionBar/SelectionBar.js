@@ -4,11 +4,11 @@ function SelectionBar() {
   return (
     <div className="SelectionBar">
         <div className="section1">
-            Hello
+            Selection
         </div>
 
         <div className="section2">
-            Muchas Gracias
+            Bar
         </div>
         
     </div>
