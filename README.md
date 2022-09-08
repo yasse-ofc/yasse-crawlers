@@ -37,6 +37,8 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 
 &nbsp;
 
+- 🚧 Adopt micro commits strategy
+  - Commit for atomic changes so that errors and bugs can be resolved faster
 - 🚧 Create backup DB
 - 🚧 Update DB on demand
 - 🚧 Change crawler structure
