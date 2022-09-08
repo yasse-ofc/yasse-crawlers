@@ -26,7 +26,6 @@ async function scrap_page(page, collection) {
 async function brmangas_scraper(collection) {
     try {
         let i = 1;
-
         const max_page_count = parseInt(
             cheerio.load(await session.get(url_domain + i)
             .then(response => response.data))('.page-numbers')
@@ -50,6 +49,7 @@ async function brmangas_scraper(collection) {
         console.log('[+][BRMANGAS] Got All Series.');
     }
     catch (error) {
+        console.log('[-][BRMANGAS] Error.');
         console.error(error);
     }
 }
