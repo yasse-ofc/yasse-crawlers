@@ -18,7 +18,7 @@ async function createDB() {
     
     await Promise.all([
         //brmangas_scraper(collection),
-        manganato_scraper(collection),
+        //manganato_scraper(collection),
         //mangahost_scraper(collection),
         //mangalivre_scraper(collection),
     ]);
@@ -60,9 +60,7 @@ async function searchDB(search_term) {
     const result = await collection.find(
         { "title": { $regex: `.*${search_term.toLowerCase()}.*` } },
         { projection: { _id: 0 } }
-    ).toArray((err) => {
-        if (err) throw err;
-    });
+    ).toArray();
     
     console.log(result);
 

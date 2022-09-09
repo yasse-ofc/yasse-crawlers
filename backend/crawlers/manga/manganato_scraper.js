@@ -5,10 +5,17 @@ const cheerio = require('cheerio');
 const mongodb = require("mongodb");
 const { session } = require('../../config/default_session');
 
+const userAgent = new UserAgent();
 const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
-    const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
+    const tmp = cheerio.load(
+        await session.get(url_domain + page, {
+            headers: {
+                'User-Agent': userAgent.random().toString()
+            }
+        })
+        .then(response => response.data));
             
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
         const title = tmp(el).children().find('a').attr('title');
@@ -27,7 +34,11 @@ async function manganato_scraper(collection) {
     try {
         let i = 1;
         const max_page_count = parseInt(
-            cheerio.load(await session.get(url_domain + i)
+            cheerio.load(await session.get(url_domain + i, {
+                headers: {
+                    'User-Agent': userAgent.random().toString()
+                }
+            })
             .then(response => response.data))('.group-page a')
             .eq(-1).attr('href').split('/').pop()
         );

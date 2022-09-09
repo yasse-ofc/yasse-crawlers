@@ -50,7 +50,7 @@ async function brmangas_scraper(collection) {
             let promises = [];
             for (let j = i; j < i + 10 && j <= max_page_count; j++) promises.push(j);
 
-            await Promise.all(promises.map(promise => scrap_page(promise, collection, userAgent)));
+            await Promise.all(promises.map(promise => scrap_page(promise, collection)));
 
             let page = (i + 9 > max_page_count) ? max_page_count : i + 9;
             console.log(`[+][BRMANGAS] ${page}/${max_page_count} pages processed.`);
