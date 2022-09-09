@@ -18,8 +18,8 @@ async function createDB() {
     
     await Promise.all([
         //brmangas_scraper(collection),
-        //manganato_scraper(collection),
-        mangahost_scraper(collection),
+        manganato_scraper(collection),
+        //mangahost_scraper(collection),
         //mangalivre_scraper(collection),
     ]);
 

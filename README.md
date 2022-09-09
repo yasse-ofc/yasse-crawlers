@@ -24,34 +24,57 @@ Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosial
 
 ❌ means won't do.
 
+&nbsp;
+
+### [Project Related]
+
+- 🚧 Adopt micro commits strategy
+  - Commit for atomic changes so that errors and bugs can be resolved faster
+- 🚧 Integrate backend and frontend
+- 🚧 Creating an RESTful API using Express so the user can read from DB without having access to it
+
+&nbsp;
+
+### [Proxy Related]
+
+- ✅ Use proxies
+- 🚧 Creating a proxy pool with auto renew to avoid Cloudflare blocking
+
+&nbsp;
+
+### [Crawler Related]
+
 - ✅ Created the crawlers for the following sites:
   - [BRMangas](https://brmangas.net)
   - [MangaHost](https://mangahosted.com) (WIP)
   - [MangaToon](https://mangatoon.mobi) (WIP)
   - [Mangalivre](https://mangalivre.net) (WIP)
-- ✅ Use proxies
-- ✅ Created DB (MongoDB)
 - ✅ Send multiple requests at once
 - ✅ Using Puppeteer for JS Rendering
 - ✅ Created list of relevant sites to use
+- 🚧 Change crawler structure
+- 🚧 Set random timer to requests
+- 🚧 Creating crawlers for a lot of sites
 
 &nbsp;
 
-- 🚧 Adopt micro commits strategy
-  - Commit for atomic changes so that errors and bugs can be resolved faster
+### [DB Related]
+
+- ✅ Created DB (MongoDB)
 - 🚧 Create backup DB
 - 🚧 Update DB on demand
-- 🚧 Change crawler structure
-- 🚧 Set random timer to requests
-- 🚧 Integrate backend and frontend
-- 🚧 Creating crawlers for a lot of sites
+
+&nbsp;
+
+### [Frontend Related]
+
 - 🚧 Create search bar to take user input
 - 🚧 Creating frontend for the site using React
 - 🚧 Create responsive dropdown menu for series type selection
-- 🚧 Creating a proxy pool with auto renew to avoid Cloudflare blocking
-- 🚧 Creating an RESTful API using Express so the user can read from DB without having access to it
 
 &nbsp;
+
+### [Limitations]
 
 - ❌ Read manga through site
   - It will only redirect the user to another manga site
