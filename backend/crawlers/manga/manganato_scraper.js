@@ -3,6 +3,7 @@ module.exports = manganato_scraper;
 const axios = require('axios');
 const cheerio = require('cheerio');
 const mongodb = require("mongodb");
+const UserAgent = require('user-agents');
 const { session } = require('../../config/default_session');
 
 const userAgent = new UserAgent();
