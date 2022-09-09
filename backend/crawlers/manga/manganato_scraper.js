@@ -13,20 +13,32 @@ async function scrap_page(page, collection) {
     const tmp = cheerio.load(
         await session.get(url_domain + page, {
             headers: {
-                'User-Agent': userAgent.random().toString()
+                'User-Agent': userAgent.random().toString(),
+                'Host': 'manganato.com',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Referer': 'https://manganato.com/',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': 1,
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'same-origin',
+                'Sec-Fetch-User': '?1',
             }
         })
         .then(response => response.data));
             
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
-        const title = tmp(el).children().find('a').attr('title');
+        const title = tmp(el).children().find('a').attr('title').toLowerCase();
         const href = tmp(el).children().find('a').attr('href');
         const img = tmp(el).children().find('a img').attr('src');
+        const last_chapter = tmp(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
         
         return {
             'title': title,
             'href': href,
             'img': img,
+            'last_chapter': last_chapter,
         }
     }).get());
 }
@@ -37,7 +49,17 @@ async function manganato_scraper(collection) {
         const max_page_count = parseInt(
             cheerio.load(await session.get(url_domain + i, {
                 headers: {
-                    'User-Agent': userAgent.random().toString()
+                    'User-Agent': userAgent.random().toString(),
+                    'Host': 'manganato.com',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Referer': 'https://manganato.com/',
+                    'Connection': 'keep-alive',
+                    'Upgrade-Insecure-Requests': 1,
+                    'Sec-Fetch-Dest': 'document',
+                    'Sec-Fetch-Mode': 'navigate',
+                    'Sec-Fetch-Site': 'same-origin',
+                    'Sec-Fetch-User': '?1',
                 }
             })
             .then(response => response.data))('.group-page a')
