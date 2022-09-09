@@ -50,6 +50,19 @@ async function deleteDB() {
     client.close();
 }
 
+async function searchDB(search_term) {
+    const client = await MongoClient.connect(url);
+    const db = client.db(dbName);
+    const collection = db.collection("manga");
+    
+    console.log('Searching...');
+
+    const result = await collection.find({ "title": { $regex: `.*${search_term.toLowerCase()}.*` } });
+    
+    console.log(result);
+    client.close();
+}
+
 if (process.argv[2] == 'create') createDB();
 else if (process.argv[2] == 'delete') deleteDB();
-else if (process.argv[2] == 'search') searchDB();
+else if (process.argv[2] == 'search') searchDB(process.argv[3]);

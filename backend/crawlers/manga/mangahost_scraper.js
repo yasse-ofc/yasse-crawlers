@@ -11,7 +11,7 @@ async function scrap_page(page, collection) {
     const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
             
     await collection.insertMany(tmp('.w-col-3').map((i, el) => {
-        const title = tmp(el).children().find('.manga-block-title-link').attr('title');
+        const title = tmp(el).children().find('.manga-block-title-link').attr('title').toLowerCase();
         const href = tmp(el).children().find('.manga-block-title-link').attr('href');
         const img = tmp(el).children().find('.manga-block-img-img').attr('src');
         

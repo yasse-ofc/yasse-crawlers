@@ -29,7 +29,7 @@ async function mangalivre_scraper(collection) {
                 let class_to_scrape = (tmp('.full-series-list .seriesList > li').html() === null) ? '.seriesList > li' : '.full-series-list .seriesList > li';
                 
                 collection.insertMany(tmp(class_to_scrape).map((i, el) => {
-                    const title = tmp(el).children().find('.series-title h1').text().trim();
+                    const title = tmp(el).children().find('.series-title h1').text().trim().toLocaleUpperCase();
                     const href = 'https://mangalivre.net' + tmp(el).children().attr('href');
                     const img = tmp(el).children().find('.cover-image').attr('style').slice(23, -3);
                     

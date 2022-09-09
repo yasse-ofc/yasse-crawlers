@@ -10,7 +10,7 @@ async function scrap_page(page, collection) {
     const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
             
     await collection.insertMany(tmp('.item').map((i, el) => {
-        const title = tmp(el).children().attr('title').slice(0, -7);
+        const title = tmp(el).children().attr('title').slice(0, -7).toLowerCase();
         const href = tmp(el).children().attr('href');
         const img = tmp(el).children().find('.img-responsive').attr('original-src');
         
