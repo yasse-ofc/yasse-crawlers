@@ -55,11 +55,15 @@ async function searchDB(search_term) {
     const db = client.db(dbName);
     const collection = db.collection("manga");
     
-    console.log('Searching...');
-
-    const result = await collection.find({ "title": { $regex: `.*${search_term.toLowerCase()}.*` } });
+    console.log(`Searching for ${search_term}...`);
+    
+    const result = await collection.find(
+        { "title": { $regex: `.*${search_term.toLowerCase()}.*` } },
+        { projection: { _id: 0, title: 1, href: 1, img: 1 } }
+    ).toArray();
     
     console.log(result);
+
     client.close();
 }
 
