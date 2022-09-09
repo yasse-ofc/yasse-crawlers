@@ -52,3 +52,4 @@ async function deleteDB() {
 
 if (process.argv[2] == 'create') createDB();
 else if (process.argv[2] == 'delete') deleteDB();
+else if (process.argv[2] == 'search') searchDB();
