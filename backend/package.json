@@ -31,6 +31,7 @@
     "mongodb": "^4.9.0",
     "puppeteer": "^16.2.0",
     "puppeteer-extra": "^3.3.4",
-    "puppeteer-extra-plugin-stealth": "^2.11.1"
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "user-agents": "^1.0.1133"
   }
 }

@@ -2,12 +2,20 @@ module.exports = brmangas_scraper;
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const UserAgent = require('user-agents');
 const { session } = require('../../config/default_session');
 
+const userAgent = new UserAgent();
 const url_domain = 'https://www.brmangas.net/lista-de-manga/page/';
 
 async function scrap_page(page, collection) {
-    const tmp = cheerio.load(await session.get(url_domain + page).then(response => response.data));
+    const tmp = cheerio.load(
+        await session.get(url_domain + page, {
+            headers: {
+                'User-Agent': userAgent.random().toString()
+            }
+        })
+        .then(response => response.data));
             
     await collection.insertMany(tmp('.item').map((i, el) => {
         const title = tmp(el).children().attr('title').slice(0, -7).toLowerCase();
@@ -25,8 +33,13 @@ async function scrap_page(page, collection) {
 async function brmangas_scraper(collection) {
     try {
         let i = 1;
+
         const max_page_count = parseInt(
-            cheerio.load(await session.get(url_domain + i)
+            cheerio.load(await session.get(url_domain + i, {
+                headers: {
+                    'User-Agent': userAgent.random().toString()
+                }
+            })
             .then(response => response.data))('.page-numbers')
             .eq(-2).text()
         );
@@ -37,7 +50,7 @@ async function brmangas_scraper(collection) {
             let promises = [];
             for (let j = i; j < i + 10 && j <= max_page_count; j++) promises.push(j);
 
-            await Promise.all(promises.map(promise => scrap_page(promise, collection)));
+            await Promise.all(promises.map(promise => scrap_page(promise, collection, userAgent)));
 
             let page = (i + 9 > max_page_count) ? max_page_count : i + 9;
             console.log(`[+][BRMANGAS] ${page}/${max_page_count} pages processed.`);

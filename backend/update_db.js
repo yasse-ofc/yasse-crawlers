@@ -59,8 +59,10 @@ async function searchDB(search_term) {
     
     const result = await collection.find(
         { "title": { $regex: `.*${search_term.toLowerCase()}.*` } },
-        { projection: { _id: 0, title: 1, href: 1, img: 1 } }
-    ).toArray();
+        { projection: { _id: 0 } }
+    ).toArray((err) => {
+        if (err) throw err;
+    });
     
     console.log(result);
 
