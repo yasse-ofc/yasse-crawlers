@@ -29,7 +29,8 @@ async function scrap_page(page, collection) {
             if (error.response) {
                 console.log(`[-][MANGANATO] Response Error on page ${page}.`);
                 scrap_page(page, collection);
-            } else throw error;
+                return;
+            }
         })
     );
             
@@ -37,7 +38,7 @@ async function scrap_page(page, collection) {
         const title = tmp(el).children().find('a').attr('title').toLowerCase();
         const href = tmp(el).children().find('a').attr('href');
         const img = tmp(el).children().find('a img').attr('src');
-        const last_chapter = (tmp(el).find('.genres-item-chap') == undefined) ? "" : tmp(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
+        const last_chapter = (tmp(el).find('.genres-item-chap').attr('href') == undefined) ? "" : tmp(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
         
         return {
             'title': title,
@@ -66,14 +67,15 @@ async function manganato_scraper(collection) {
                     'Sec-Fetch-Site': 'same-origin',
                     'Sec-Fetch-User': '?1',
                 }})
-            .then(response => response.data))('.group-page a')
-            .eq(-1).attr('href').split('/').pop()
+            .then(response => response.data)
             .catch((error) => {
                 if (error.response) {
                     console.log(`[-][MANGANATO] Response Error on page ${page}.`);
                     manganato_scraper(collection);
-                } else throw error;
-            })
+                    return;
+                }
+            }))('.group-page a')
+            .eq(-1).attr('href').split('/').pop()
         );
         
         console.log('[+][MANGANATO] Getting Series...');
