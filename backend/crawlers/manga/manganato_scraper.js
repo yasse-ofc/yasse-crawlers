@@ -10,29 +10,34 @@ const userAgent = new UserAgent();
 const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
-    const tmp = cheerio.load(
-        await session.get(url_domain + page, {
-            headers: {
-                'User-Agent': userAgent.random().toString(),
-                'Host': 'manganato.com',
-                'Accept-Language': 'en-US,en;q=0.5',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'Referer': 'https://manganato.com/',
-                'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': 1,
-                'Sec-Fetch-Dest': 'document',
-                'Sec-Fetch-Mode': 'navigate',
-                'Sec-Fetch-Site': 'same-origin',
-                'Sec-Fetch-User': '?1',
-            }
+    const tmp = cheerio.load(await session.get(url_domain + page, {
+        headers: {
+            'User-Agent': userAgent.random().toString(),
+            'Host': 'manganato.com',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Referer': 'https://manganato.com/',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': 1,
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-Fetch-User': '?1',
+        }})
+        .then(response => response.data)
+        .catch((error) => {
+            if (error.response) {
+                console.log(`[-][MANGANATO] Response Error on page ${page}.`);
+                scrap_page(page, collection);
+            } else throw error;
         })
-        .then(response => response.data));
+    );
             
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
         const title = tmp(el).children().find('a').attr('title').toLowerCase();
         const href = tmp(el).children().find('a').attr('href');
         const img = tmp(el).children().find('a img').attr('src');
-        const last_chapter = tmp(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
+        const last_chapter = (tmp(el).find('.genres-item-chap') == undefined) ? "" : tmp(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
         
         return {
             'title': title,
@@ -60,10 +65,15 @@ async function manganato_scraper(collection) {
                     'Sec-Fetch-Mode': 'navigate',
                     'Sec-Fetch-Site': 'same-origin',
                     'Sec-Fetch-User': '?1',
-                }
-            })
+                }})
             .then(response => response.data))('.group-page a')
             .eq(-1).attr('href').split('/').pop()
+            .catch((error) => {
+                if (error.response) {
+                    console.log(`[-][MANGANATO] Response Error on page ${page}.`);
+                    manganato_scraper(collection);
+                } else throw error;
+            })
         );
         
         console.log('[+][MANGANATO] Getting Series...');
@@ -84,6 +94,6 @@ async function manganato_scraper(collection) {
         
     } catch (error) {
         console.log('[-][MANGANATO] Error.');
-        console.error(error);
+        throw error;
     }
 }
