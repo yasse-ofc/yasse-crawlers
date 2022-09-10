@@ -4,36 +4,21 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const mongodb = require("mongodb");
 const UserAgent = require('user-agents');
-const { session } = require('../../config/default_session');
+const { manganato_session } = require('../../config/default_session');
 
 const userAgent = new UserAgent();
 const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
-    const tmp = cheerio.load(await session.get(url_domain + page, {
-        headers: {
-            'User-Agent': userAgent.random().toString(),
-            'Host': 'manganato.com',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Referer': 'https://manganato.com/',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': 1,
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'same-origin',
-            'Sec-Fetch-User': '?1',
-        }})
+    const tmp = cheerio.load(await manganato_session().get(url_domain + page)
         .then(response => response.data)
         .catch((error) => {
             if (error.response) {
                 console.log(`[-][MANGANATO] Response Error on page ${page}.`);
                 scrap_page(page, collection);
-                return;
             }
-        })
-    );
-            
+    }));
+    
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
         const title = tmp(el).children().find('a').attr('title').toLowerCase();
         const href = tmp(el).children().find('a').attr('href');
@@ -52,31 +37,15 @@ async function scrap_page(page, collection) {
 async function manganato_scraper(collection) {
     try {
         let i = 1;
-        const max_page_count = parseInt(
-            cheerio.load(await session.get(url_domain + i, {
-                headers: {
-                    'User-Agent': userAgent.random().toString(),
-                    'Host': 'manganato.com',
-                    'Accept-Language': 'en-US,en;q=0.5',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Referer': 'https://manganato.com/',
-                    'Connection': 'keep-alive',
-                    'Upgrade-Insecure-Requests': 1,
-                    'Sec-Fetch-Dest': 'document',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Sec-Fetch-User': '?1',
-                }})
+        const max_page_count = parseInt(cheerio.load(await manganato_session().get(url_domain + i)
             .then(response => response.data)
             .catch((error) => {
                 if (error.response) {
                     console.log(`[-][MANGANATO] Response Error on page ${page}.`);
                     manganato_scraper(collection);
-                    return;
                 }
             }))('.group-page a')
-            .eq(-1).attr('href').split('/').pop()
-        );
+            .eq(-1).attr('href').split('/').pop());
         
         console.log('[+][MANGANATO] Getting Series...');
         
