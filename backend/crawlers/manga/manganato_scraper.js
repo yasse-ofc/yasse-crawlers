@@ -5,14 +5,14 @@ const cheerio = require('cheerio');
 const mongodb = require("mongodb");
 const UserAgent = require('user-agents');
 const axiosRetry = require('axios-retry');
-const { manganato_session, manganato_session } = require('../../config/default_session');
+const { manganato_session } = require('../../config/default_session');
 
 const userAgent = new UserAgent();
 const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
-    const manganato_session = manganato_session();
-    axiosRetry(manganato_session, {
+    const session = manganato_session();
+    axiosRetry(session, {
         retries: 3,
         retryDelay: (retryCount) => {
             console.log(`[-][MANGANATO] Error fetching page ${page}, retrying ${retryCount}/3 times.`);
@@ -20,7 +20,7 @@ async function scrap_page(page, collection) {
         }
     });
 
-    const tmp = cheerio.load(await manganato_session.get(url_domain + page)
+    const tmp = cheerio.load(await session.get(url_domain + page)
         .then(response => response.data)
     );
     
@@ -43,8 +43,8 @@ async function manganato_scraper(collection) {
     try {
         let i = 1;
 
-        const manganato_session = manganato_session();
-        axiosRetry(manganato_session, {
+        const session = manganato_session();
+        axiosRetry(session, {
             retries: 3,
             retryDelay: (retryCount) => {
                 console.log(`[-][MANGANATO] Error fetching page ${i}, retrying ${retryCount}/3 times.`);
@@ -52,7 +52,7 @@ async function manganato_scraper(collection) {
             }
         });
 
-        const max_page_count = parseInt(cheerio.load(await manganato_session.get(url_domain + i)
+        const max_page_count = parseInt(cheerio.load(await session.get(url_domain + i)
             .then(response => response.data)
             )('.group-page a')
             .eq(-1).attr('href').split('/').pop());
