@@ -12,16 +12,17 @@ const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
     const manganato_session = manganato_session();
-    axiosRetry(manganato_session, { retries: 3 });
+    axiosRetry(manganato_session, {
+        retries: 3,
+        retryDelay: (retryCount) => {
+            console.log(`[-][MANGANATO] Error fetching page ${page}, retrying ${retryCount}/3 times.`);
+            return retryCount * 2000;
+        }
+    });
 
     const tmp = cheerio.load(await manganato_session.get(url_domain + page)
         .then(response => response.data)
-        .catch((error) => {
-            if (error.response) {
-                console.log(`[-][MANGANATO] Response Error on page ${page}.`);
-                scrap_page(page, collection);
-            }
-    }));
+    );
     
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
         const title = tmp(el).children().find('a').attr('title').toLowerCase();
@@ -43,16 +44,17 @@ async function manganato_scraper(collection) {
         let i = 1;
 
         const manganato_session = manganato_session();
-        axiosRetry(manganato_session, { retries: 3 });
+        axiosRetry(manganato_session, {
+            retries: 3,
+            retryDelay: (retryCount) => {
+                console.log(`[-][MANGANATO] Error fetching page ${i}, retrying ${retryCount}/3 times.`);
+                return retryCount * 2000;
+            }
+        });
 
         const max_page_count = parseInt(cheerio.load(await manganato_session.get(url_domain + i)
             .then(response => response.data)
-            .catch((error) => {
-                if (error.response) {
-                    console.log(`[-][MANGANATO] Response Error on page ${page}.`);
-                    manganato_scraper(collection);
-                }
-            }))('.group-page a')
+            )('.group-page a')
             .eq(-1).attr('href').split('/').pop());
         
         console.log('[+][MANGANATO] Getting Series...');
