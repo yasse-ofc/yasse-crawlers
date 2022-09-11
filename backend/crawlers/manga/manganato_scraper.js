@@ -4,13 +4,17 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const mongodb = require("mongodb");
 const UserAgent = require('user-agents');
-const { manganato_session } = require('../../config/default_session');
+const axiosRetry = require('axios-retry');
+const { manganato_session, manganato_session } = require('../../config/default_session');
 
 const userAgent = new UserAgent();
 const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
-    const tmp = cheerio.load(await manganato_session().get(url_domain + page)
+    const manganato_session = manganato_session();
+    axiosRetry(manganato_session, { retries: 3 });
+
+    const tmp = cheerio.load(await manganato_session.get(url_domain + page)
         .then(response => response.data)
         .catch((error) => {
             if (error.response) {
@@ -37,7 +41,11 @@ async function scrap_page(page, collection) {
 async function manganato_scraper(collection) {
     try {
         let i = 1;
-        const max_page_count = parseInt(cheerio.load(await manganato_session().get(url_domain + i)
+
+        const manganato_session = manganato_session();
+        axiosRetry(manganato_session, { retries: 3 });
+
+        const max_page_count = parseInt(cheerio.load(await manganato_session.get(url_domain + i)
             .then(response => response.data)
             .catch((error) => {
                 if (error.response) {
