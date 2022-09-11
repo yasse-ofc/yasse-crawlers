@@ -20,9 +20,11 @@ async function scrap_page(page, collection) {
         }
     });
 
-    const tmp = cheerio.load(await session.get(url_domain + page)
+    const load_page = await session.get(url_domain + page)
         .then(response => response.data)
-    );
+        .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
+
+    const tmp = cheerio.load(load_page);
     
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
         const title = tmp(el).children().find('a').attr('title').toLowerCase();
@@ -52,9 +54,11 @@ async function manganato_scraper(collection) {
             }
         });
 
-        const max_page_count = parseInt(cheerio.load(await session.get(url_domain + i)
+        const load_page = await session.get(url_domain + i)
             .then(response => response.data)
-            )('.group-page a')
+            .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
+
+        const max_page_count = parseInt(cheerio.load(load_page)('.group-page a')
             .eq(-1).attr('href').split('/').pop());
         
         console.log('[+][MANGANATO] Getting Series...');
