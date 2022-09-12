@@ -4,7 +4,6 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const mongodb = require("mongodb");
 const UserAgent = require('user-agents');
-const axiosRetry = require('axios-retry');
 const { manganato_session } = require('../../config/default_session');
 
 const userAgent = new UserAgent();
@@ -12,19 +11,11 @@ const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
     const session = manganato_session();
-    axiosRetry(session, {
-        retries: 3,
-        retryDelay: (retryCount) => {
-            console.log(`[-][MANGANATO] Error fetching page ${page}, retrying ${retryCount}/3 times.`);
-            return retryCount * 2000;
-        }
-    });
-
     const load_page = await session.get(url_domain + page)
         .then(response => response.data)
         .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
 
-    const tmp = cheerio.load(load_page);
+    const tmp = cheerio.load(await load_page);
     
     await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
         const title = tmp(el).children().find('a').attr('title').toLowerCase();
@@ -45,20 +36,11 @@ async function manganato_scraper(collection) {
     try {
         let i = 1;
 
-        const session = manganato_session();
-        axiosRetry(session, {
-            retries: 3,
-            retryDelay: (retryCount) => {
-                console.log(`[-][MANGANATO] Error fetching page ${i}, retrying ${retryCount}/3 times.`);
-                return retryCount * 2000;
-            }
-        });
-
         const load_page = await session.get(url_domain + i)
             .then(response => response.data)
             .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
 
-        const max_page_count = parseInt(cheerio.load(load_page)('.group-page a')
+        const max_page_count = parseInt(cheerio.load(await load_page)('.group-page a')
             .eq(-1).attr('href').split('/').pop());
         
         console.log('[+][MANGANATO] Getting Series...');
