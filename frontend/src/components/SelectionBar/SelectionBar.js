@@ -1,5 +1,4 @@
 import './SelectionBar.css';
-import React, { useState } from 'react';
 
 function SelectionBar() {
   return (
@@ -16,5 +15,7 @@ function SelectionBar() {
 
   );
 }
+
+
 
 export default SelectionBar;
