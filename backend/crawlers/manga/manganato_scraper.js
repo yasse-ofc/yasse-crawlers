@@ -3,10 +3,8 @@ module.exports = manganato_scraper;
 const axios = require('axios');
 const cheerio = require('cheerio');
 const mongodb = require("mongodb");
-const UserAgent = require('user-agents');
 const { manganato_session } = require('../../config/default_session');
 
-const userAgent = new UserAgent();
 const url_domain = 'https://manganato.com/genre-all/';
 
 async function scrap_page(page, collection) {
