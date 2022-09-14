@@ -45,28 +45,32 @@ async function manganato_scraper(collection) {
         
         const session = manganato_session();
         
-        const max_page_count = await session.get(url_domain + i)
-            .then(response => parseInt(cheerio.load(response.data)('.group-page a')
-                .eq(-1).attr('href').split('/').pop())
-            )
-            .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
-
-        console.log('[+][MANGANATO] Getting Series...');
+        await session.get(url_domain + i)
+        .then(async (response) => {
+            const max_page_count = await parseInt(cheerio.load(response.data)('.group-page a')
+            .eq(-1).attr('href').split('/').pop());
         
-        while (i < max_page_count) {
-            let promises = [];
-            for (let j = i; j < i + 10 && j <= max_page_count; j++) promises.push(j);
-
-            await Promise.all(promises.map(promise => scrap_page(promise, collection)));
-
-            let page = (i + 9 > max_page_count) ? max_page_count : i + 9;
-            console.log(`[+][MANGANATO] ${page}/${max_page_count} pages processed.`);
-
-            i += 10;
-        }
-
-        console.log('[+][MANGANATO] Got All Series.');
+            console.log('[+][MANGANATO] Getting Series...');
         
+            while (i < max_page_count) {
+                let promises = [];
+                for (let j = i; j < i + 10 && j <= max_page_count; j++) promises.push(j);
+
+                await Promise.all(promises.map(promise => scrap_page(promise, collection)));
+
+                let page = (i + 9 > max_page_count) ? max_page_count : i + 9;
+                console.log(`[+][MANGANATO] ${page}/${max_page_count} pages processed.`);
+
+                i += 10;
+            }
+
+            console.log('[+][MANGANATO] Got All Series.');    
+        })
+        .catch(async (error) => {
+            console.log(`[-][MANGANATO] Error fetching max page count.`);
+            
+            await manganato_scraper(collection);
+        });
     } catch (error) {
         console.log('[-][MANGANATO] Error.');
         throw error;
