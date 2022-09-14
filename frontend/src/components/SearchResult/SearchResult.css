@@ -5,6 +5,8 @@
     width: 400px;
     height: 500px;
     border-radius: 25px;
-    background: #97A4B5;   
+    overflow: hidden;
+    background: #97A4B5;  
+
 }
 
