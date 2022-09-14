@@ -1,20 +1,30 @@
 const axios = require('axios');
 const UserAgent = require('user-agents');
+const axiosRetry = require('axios-retry');
 const dotenv = require('dotenv').config();
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
 const userAgent = new UserAgent();
 
 function session() {
-    return axios.create({
+    const session = axios.create({
         proxy: false,
         headers: {
             'User-Agent': userAgent.random().toString(),
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         },
         timeout: 30000,
-        httpsAgent: new HttpsProxyAgent(`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`)
-    })
+        httpsAgent: new HttpsProxyAgent(`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`),
+    });
+    axiosRetry(session, {
+        retries: 3,
+        retryDelay: axiosRetry.exponentialDelay,
+        onRetry: (retryCount, error, requestConfig) => {
+            console.log(`Retrying for the ${retryCount} time...`);
+        }
+    });
+
+    return session;
 };
 
 function manganato_session() {

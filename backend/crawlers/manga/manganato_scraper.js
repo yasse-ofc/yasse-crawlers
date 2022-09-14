@@ -12,22 +12,21 @@ const url_domain = 'https://manganato.com/genre-all/';
 async function scrap_page(page, collection) {
     const session = manganato_session();
     const load_page = await session.get(url_domain + page)
-        .then(response => response.data)
-        .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
-
-    const tmp = cheerio.load(await load_page);
+    .then(response => cheerio.load(response.data))
+    .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
     
-    await collection.insertMany(tmp('.panel-content-genres .content-genres-item').map((page, el) => {
-        const title = tmp(el).children().find('a').attr('title').toLowerCase();
-        const href = tmp(el).children().find('a').attr('href');
-        const img = tmp(el).children().find('a img').attr('src');
-        const last_chapter = (tmp(el).find('.genres-item-chap').attr('href') == undefined) ? "" : tmp(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
+    await collection.insertMany(load_page('.panel-content-genres .content-genres-item').map((page, el) => {
+        const title = load_page(el).children().find('a').attr('title').toLowerCase();
+        const href = load_page(el).children().find('a').attr('href');
+        const img = load_page(el).children().find('a img').attr('src');
+        const last_chapter = (load_page(el).find('.genres-item-chap').attr('href') == undefined) ? "" : load_page(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
         
         return {
             'title': title,
             'href': href,
             'img': img,
             'last_chapter': last_chapter,
+            'source': 'manganato',
         }
     }).get());
 }
@@ -35,14 +34,13 @@ async function scrap_page(page, collection) {
 async function manganato_scraper(collection) {
     try {
         let i = 1;
-
-        const load_page = await session.get(url_domain + i)
-            .then(response => response.data)
+        
+        const session = manganato_session();
+        const max_page_count = await session.get(url_domain + i)
+            .then(response => parseInt(cheerio.load(response.data)('.group-page a')
+                .eq(-1).attr('href').split('/').pop()))
             .catch((error) => console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}`));
 
-        const max_page_count = parseInt(cheerio.load(await load_page)('.group-page a')
-            .eq(-1).attr('href').split('/').pop());
-        
         console.log('[+][MANGANATO] Getting Series...');
         
         while (i < max_page_count) {

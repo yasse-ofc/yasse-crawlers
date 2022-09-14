@@ -17,8 +17,8 @@ async function createDB() {
     let collection = db.collection("manga");
     
     await Promise.all([
-        manganato_scraper(collection),
         //brmangas_scraper(collection),
+        manganato_scraper(collection),
         //mangahost_scraper(collection),
         //mangalivre_scraper(collection),
     ]);
@@ -62,11 +62,13 @@ async function searchDB(search_term) {
         { projection: { _id: 0 } }
     ).toArray();
     
-    console.log(result);
-
     client.close();
+    
+    return result;
 }
 
 if (process.argv[2] == 'create') createDB();
 else if (process.argv[2] == 'delete') deleteDB();
 else if (process.argv[2] == 'search') searchDB(process.argv[3]);
+
+module.exports = { searchDB };

@@ -10,37 +10,37 @@ const url_domain = 'https://www.brmangas.net/lista-de-manga/page/';
 
 async function scrap_page(page, collection) {
     const tmp = cheerio.load(
-        await session.get(url_domain + page, {
+        await session().get(url_domain + page, {
             headers: {
                 'User-Agent': userAgent.random().toString()
             }
         })
         .then(response => response.data));
-            
-    await collection.insertMany(tmp('.item').map((i, el) => {
-        const title = tmp(el).children().attr('title').slice(0, -7).toLowerCase();
-        const href = tmp(el).children().attr('href');
-        const img = tmp(el).children().find('.img-responsive').attr('original-src');
         
-        return {
-            'title': title,
-            'href': href,
-            'img': img,
-        }
-    }).get());
-}
-
-async function brmangas_scraper(collection) {
-    try {
-        let i = 1;
-
-        const max_page_count = parseInt(
-            cheerio.load(await session.get(url_domain + i, {
-                headers: {
-                    'User-Agent': userAgent.random().toString()
-                }
-            })
-            .then(response => response.data))('.page-numbers')
+        await collection.insertMany(tmp('.item').map((i, el) => {
+            const title = tmp(el).children().attr('title').slice(0, -7).toLowerCase();
+            const href = tmp(el).children().attr('href');
+            const img = tmp(el).children().find('.img-responsive').attr('original-src');
+            
+            return {
+                'title': title,
+                'href': href,
+                'img': img,
+            }
+        }).get());
+    }
+    
+    async function brmangas_scraper(collection) {
+        try {
+            let i = 1;
+            
+            const max_page_count = parseInt(
+                cheerio.load(await session().get(url_domain + i, {
+                    headers: {
+                        'User-Agent': userAgent.random().toString()
+                    }
+                })
+                .then(response => response.data))('.page-numbers')
             .eq(-2).text()
         );
         
