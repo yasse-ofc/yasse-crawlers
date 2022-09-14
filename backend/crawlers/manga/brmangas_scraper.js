@@ -2,12 +2,14 @@ module.exports = brmangas_scraper;
 
 const axios = require('axios');
 const cheerio = require('cheerio');
-const { session } = require('../../config/default_session');
+const { brmangas_session } = require('../../config/default_session');
 
 const url_domain = 'https://www.brmangas.net/lista-de-manga/page/';
 
 async function scrap_page(page, collection) {
-await session().get(url_domain + page)
+    const session = brmangas_session();
+
+    await session.get(url_domain + page)
     .then(async (response) => {
         const tmp = cheerio.load(response.data);
         
@@ -34,8 +36,10 @@ await session().get(url_domain + page)
 async function brmangas_scraper(collection) {
     try {
         let i = 1;
+    
+        const session = brmangas_session();
         
-        await session().get(url_domain + i)
+        await session.get(url_domain + i)
         .then(async (response) => {
             const max_page_count = parseInt(cheerio.load(response.data)('.page-numbers').eq(-2).text());
     
