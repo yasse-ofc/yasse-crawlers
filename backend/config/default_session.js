@@ -1,6 +1,5 @@
 const axios = require('axios');
 const UserAgent = require('user-agents');
-const axiosRetry = require('axios-retry');
 const dotenv = require('dotenv').config();
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
@@ -15,13 +14,6 @@ function session() {
         },
         timeout: 30000,
         httpsAgent: new HttpsProxyAgent(`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`),
-    });
-    axiosRetry(session, {
-        retries: 3,
-        retryDelay: axiosRetry.exponentialDelay,
-        onRetry: (retryCount, error, requestConfig) => {
-            console.log(`Retrying for the ${retryCount} time...`);
-        }
     });
 
     return session;
