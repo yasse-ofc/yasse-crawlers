@@ -6,7 +6,7 @@ const { HttpsProxyAgent } = require('https-proxy-agent');
 const userAgent = new UserAgent();
 
 function session() {
-    const session = axios.create({
+    return axios.create({
         proxy: false,
         headers: {
             'User-Agent': userAgent.random().toString(),
@@ -23,8 +23,6 @@ function session() {
         timeout: 30000,
         httpsAgent: new HttpsProxyAgent(`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`),
     });
-
-    return session;
 };
 
 function manganato_session() {
@@ -38,9 +36,10 @@ function manganato_session() {
 function brmangas_session() {
     return session().create({
         headers: {
+            'User-Agent': userAgent.random().toString(),
+            'Accept-Encoding': '',
             'Alt-Used': 'www.brmangas.net',
             'Host': 'www.brmangas.net',
-            'Referer': 'https://www.brmangas.net/',
     }})
 };
 

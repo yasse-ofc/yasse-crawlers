@@ -7,13 +7,14 @@ const { manganato_session } = require('../../config/default_session');
 
 const url_domain = 'https://manganato.com/genre-all/';
 
+
 async function scrap_page(page, collection) {
     const session = manganato_session();
-
+    
     await session.get(url_domain + page)
     .then(async (response) => {
         const load_page = cheerio.load(response.data);
-    
+        
         await collection.insertMany(load_page('.panel-content-genres .content-genres-item').map((page, el) => {
             const title = load_page(el).children().find('a').attr('title').toLowerCase();
             const href = load_page(el).children().find('a').attr('href');
@@ -45,7 +46,7 @@ async function manganato_scraper(collection) {
         
         await session.get(url_domain + i)
         .then(async (response) => {
-            const max_page_count = await parseInt(cheerio.load(response.data)('.group-page a')
+            const max_page_count = parseInt(cheerio.load(response.data)('.group-page a')
             .eq(-1).attr('href').split('/').pop());
         
             console.log('[+][MANGANATO] Getting Series...');
@@ -69,7 +70,8 @@ async function manganato_scraper(collection) {
             
             await manganato_scraper(collection);
         });
-    } catch (error) {
+    }
+    catch (error) {
         console.log('[-][MANGANATO] Error.');
         throw error;
     }
