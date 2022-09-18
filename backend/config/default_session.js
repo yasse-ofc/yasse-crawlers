@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
 const userAgent = new UserAgent();
+const proxy_url = `http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`;
 
 function session() {
     return axios.create({
@@ -20,8 +21,8 @@ function session() {
             'Sec-Fetch-Site': 'same-origin',
             'Sec-Fetch-User': '?1',
         },
-        timeout: 30000,
-        httpsAgent: new HttpsProxyAgent(`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`),
+        timeout: process.env.TIMEOUT,
+        httpsAgent: new HttpsProxyAgent(proxy_url),
     });
 };
 
@@ -36,11 +37,17 @@ function manganato_session() {
 function brmangas_session() {
     return session().create({
         headers: {
-            'User-Agent': userAgent.random().toString(),
             'Accept-Encoding': '',
             'Alt-Used': 'www.brmangas.net',
             'Host': 'www.brmangas.net',
     }})
 };
 
-module.exports = { session, manganato_session, brmangas_session };
+function mangalivre_session() {
+    return session().create({
+        headers: {
+            'Host': 'mangalivre.net',
+    }})
+};
+
+module.exports = { session, manganato_session, brmangas_session, mangalivre_session, proxy_url };

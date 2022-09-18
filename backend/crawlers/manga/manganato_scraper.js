@@ -19,13 +19,13 @@ async function scrap_page(page, collection) {
             const title = load_page(el).children().find('a').attr('title').toLowerCase();
             const href = load_page(el).children().find('a').attr('href');
             const img = load_page(el).children().find('a img').attr('src');
-            const last_chapter = (load_page(el).find('.genres-item-chap').attr('href') == undefined) ? "" : load_page(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
+            const latest_chapter = (load_page(el).find('.genres-item-chap').attr('href') == undefined) ? "" : load_page(el).find('.genres-item-chap').attr('href').split('/').pop().split('-').pop();
             
             return {
                 'title': title,
                 'href': href,
                 'img': img,
-                'last_chapter': last_chapter,
+                'latest_chapter': latest_chapter,
                 'source': 'manganato',
             }
         }).get());

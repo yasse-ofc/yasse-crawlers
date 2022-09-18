@@ -20,7 +20,7 @@ async function mangalivre_scraper(collection) {
 
             while (true) {
                 await page.goto(url_domain + i, { waitUntil: 'domcontentloaded' });
-                await page.waitForTimeout(5000);
+                await page.waitForTimeout(30000);
 
                 let tmp = cheerio.load(await page.content());
 

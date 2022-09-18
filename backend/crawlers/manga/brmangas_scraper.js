@@ -6,6 +6,23 @@ const { brmangas_session } = require('../../config/default_session');
 
 const url_domain = 'https://www.brmangas.net/lista-de-manga/page/';
 
+async function scrap_manga_page(href) {
+    const session = brmangas_session();
+    let latest_chapter = null;
+    
+    await session.get(href)
+    .then((response) => {
+        latest_chapter = cheerio.load(response.data)('.lista_ep a').eq(-1).text().slice(9);
+    })
+    .catch(async (error) => {
+        if (error.response.status) console.log(`[-][BRMANGAS] Error ${error.response.status} on manga page ${href}.`);
+        else console.log(`[-][BRMANGAS] Error on manga page ${href}.`);
+        
+        latest_chapter = await scrap_manga_page(href);
+    });
+
+    return latest_chapter;
+}
 
 async function scrap_page(page, collection) {
     const session = brmangas_session();
@@ -14,21 +31,23 @@ async function scrap_page(page, collection) {
     .then(async (response) => {
         const tmp = cheerio.load(response.data);
         
-        await collection.insertMany(tmp('.item').map(async (i, el) => {
+        await collection.insertMany(tmp('.item').map((i, el) => {
             const title = tmp(el).children().attr('title').slice(0, -7).toLowerCase();
             const href = tmp(el).children().attr('href');
             const img = tmp(el).children().find('.img-responsive').attr('original-src');
-            
+            //const latest_chapter = scrap_manga_page(href);
+
             return {
                 'title': title,
                 'href': href,
                 'img': img,
+                //'latest_chapter': latest_chapter,
                 'source': 'brmangas'
             }
         }).get());
     })
     .catch(async (error) => {
-        if (error.response.status) console.log(`[-][MANGANATO] Error ${error.response.status} on page ${page}.`);
+        if (error.response.status) console.log(`[-][BRMANGAS] Error ${error.response.status} on page ${page}.`);
         else console.log(`[-][BRMANGAS] Error on page ${page}.`);
         
         await scrap_page(page, collection);
