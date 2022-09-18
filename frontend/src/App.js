@@ -1,16 +1,18 @@
 import './App.css';
-import Dropdown from './components/Dropdown/Droppdown';
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResult from './components/SearchResult/SearchResult';
 import SelectionBar from './components/SelectionBar/SelectionBar';
+import SelectionLgs from './components/SelectionLgs/SelectionLgs';
 
 function App() {
   return (
     <div className="App">
-     <SelectionBar />
      <SearchBar /> 
+     <div className="test">
+      <SelectionBar />
+      <SelectionLgs />
+     </div>
      <SearchResult />
-     <Dropdown />
     </div>
   );
 }

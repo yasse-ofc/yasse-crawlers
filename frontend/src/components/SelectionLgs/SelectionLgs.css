@@ -1,18 +1,17 @@
-.SelectionBar {
-    width: 280px;
+.SelectionLgs{
+
+    width: 140px;
     color: white;
     height: 50px;
     border-radius: 7px;
 }
 
-.section1 {
-
+.Section{
     background: #343F52;
     display: inline-block;
-    border-radius: 7px;
-    /*margin-right: 120px;*/
-    height: 50px;
     border-radius: 50px;
-    width: 280px;
+    /*margin-left: 450px;
+    margin-top: -200px;*/
+    height: 50px;
+    width: 100px;
 }
-
