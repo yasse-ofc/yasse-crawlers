@@ -1,5 +1,5 @@
 const express = require('express');
-const { searchDB } = require('../update_db');
+const { searchDB } = require('../db_related');
 const app = express();
 const port = 3000;
 
