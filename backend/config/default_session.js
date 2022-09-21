@@ -61,13 +61,20 @@ function animeplanet_session() {
 function novelupdates_session() {
     return session().create({
         headers: {
-            //'Accept-Encoding': '',
-            //'Alt-Used': 'www.novelupdates.com',
+            'Accept-Encoding': '',
+            'Alt-Used': 'www.novelupdates.com',
             'Host': 'www.novelupdates.com',
             'Sec-Fetch-Site': 'cross-site',
     }})
 };
 
+function test_session() {
+    return session().create({
+        headers: {
+            'Accept-Encoding': '',
+    }})
+};
+
 module.exports = { session, manganato_session, brmangas_session,
                    mangalivre_session, animeplanet_session, proxy_url,
-                   novelupdates_session };
+                   novelupdates_session, test_session };

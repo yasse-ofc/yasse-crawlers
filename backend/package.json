@@ -21,7 +21,7 @@
     "url": "https://github.com/ed-henrique/manga-br-search-engine"
   },
   "scripts": {
-    "test": "jest --watchAll --verbose --coverage"
+    "test": "jest --watchAll --verbose"
   },
   "dependencies": {
     "axios": "^0.27.2",
