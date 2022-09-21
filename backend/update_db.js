@@ -1,11 +1,13 @@
 const dotenv = require('dotenv').config();
 const { MongoClient } = require("mongodb");
 
-// MANGA
-const brmangas_scraper = require('./crawlers/manga/brmangas_scraper');
-const mangahost_scraper = require('./crawlers/manga/mangahost_scraper');
-const manganato_scraper = require('./crawlers/manga/manganato_scraper');
-const mangalivre_scraper = require('./crawlers/manga/mangalivre_scraper');
+const glob = require('glob');
+const path = require('path');
+
+// REQUIRES CRAWLERS
+glob.sync('./crawlers/**/*.js').forEach(file => {
+    require(path.resolve(file));
+});
 
 const url = `mongodb+srv://adm:${process.env.MONGODB_PASS}@search-engine-db.q0ish8y.mongodb.net/?retryWrites=true&w=majority`;
 const dbName = 'search-engine-db';
@@ -14,21 +16,35 @@ async function createDB() {
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
 
-    let collection = db.collection("manga");
+    const collections = ['manga', 'novel', 'webtoon', 'anime', 'test'];
+
+    let collection = db.collection(`${collections[0]}`);
+    console.log(`----- Fetching ${collections[0]}... -----`);
     
     await Promise.all([
-        brmangas_scraper(collection),
-        manganato_scraper(collection),
+        //brmangas_scraper(collection),
+        //manganato_scraper(collection),
         //mangahost_scraper(collection),
         //mangalivre_scraper(collection),
     ]);
+    
+    collection = db.collection(`${collections[1]}`);
+    console.log(`----- Fetching ${collections[1]}... -----`);
+    
+    await Promise.all([]);
+    
+    collection = db.collection(`${collections[2]}`);
+    console.log(`----- Fetching ${collections[2]}... -----`);
+    
+    await Promise.all([]);
+    
+    collection = db.collection(`${collections[3]}`);
+    console.log(`----- Fetching ${collections[3]}... -----`);
 
-    collection = db.collection("novel");
-
-    collection = db.collection("anime");
-
-    collection = db.collection("webtoon");
-
+    await Promise.all([
+        //animeplanet_scraper(collection),
+    ]);
+    
     client.close();
 }
 

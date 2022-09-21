@@ -47,5 +47,3 @@ async function mangavibe_scraper() {
         throw error;
     }
 }
-
-mangavibe_scraper();

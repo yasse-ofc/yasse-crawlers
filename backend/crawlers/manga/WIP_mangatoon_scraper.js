@@ -50,5 +50,3 @@ async function mangatoon_scraper(collection) {
         console.error(error);
     }
 }
-
-mangatoon_scraper();

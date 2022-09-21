@@ -50,4 +50,12 @@ function mangalivre_session() {
     }})
 };
 
-module.exports = { session, manganato_session, brmangas_session, mangalivre_session, proxy_url };
+function animeplanet_session() {
+    return session().create({
+        headers: {
+            'Accept-Encoding': '',
+            'Host': 'www.anime-planet.com',
+    }})
+};
+
+module.exports = { session, manganato_session, brmangas_session, mangalivre_session, animeplanet_session, proxy_url };
