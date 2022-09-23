@@ -6,9 +6,9 @@
 
 This projects indexes series of types such as manga, novels, webtoons, anime, etc. in an organized manner.
 
-### 1.1.2 - Project Overview
+### 1.1.2 - Project Deliverables
 
-ewrweterterewr
+The project will deliver an web app.
 
 ## 1.2 - Project Organization
 
@@ -28,8 +28,6 @@ The roles given to our team are broad, because there are few team members as of 
 | Project Manager    | Prepare documentation, analyze requisites, keep the team motivated |
 
 ### 1.2.3 - Tools and Techniques
-
-
 
 ## 1.3 - Project Management Plan
 
