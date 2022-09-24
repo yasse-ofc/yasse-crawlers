@@ -1,6 +1,6 @@
 {
   "name": "manga-br-search-engine",
-  "version": "1.0",
+  "version": "0.1.0",
   "description": "A webpage which searches through the most popular manga readers in Brazil to find the most updated one for a specific manga.",
   "homepage": "https://github.com/ed-henrique/manga-br-search-engine",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "url": "https://github.com/ed-henrique/manga-br-search-engine"
   },
   "scripts": {
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose --detectOpenHandles"
   },
   "dependencies": {
     "axios": "^0.27.2",
