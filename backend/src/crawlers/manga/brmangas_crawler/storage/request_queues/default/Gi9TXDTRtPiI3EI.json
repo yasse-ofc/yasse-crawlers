@@ -1,9 +1,0 @@
-{
-	"id": "Gi9TXDTRtPiI3EI",
-	"json": "{\"id\":\"Gi9TXDTRtPiI3EI\",\"url\":\"https://www.brmangas.net/manga/smash-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/smash-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/smash-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:50.873Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/smash-online",
-	"url": "https://www.brmangas.net/manga/smash-online/"
-}

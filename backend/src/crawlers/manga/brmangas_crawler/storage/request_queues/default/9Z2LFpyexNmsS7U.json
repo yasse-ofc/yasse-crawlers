@@ -1,9 +1,0 @@
-{
-	"id": "9Z2LFpyexNmsS7U",
-	"json": "{\"id\":\"9Z2LFpyexNmsS7U\",\"url\":\"https://www.brmangas.net/manga/kemono-giga-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/kemono-giga-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/kemono-giga-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:42.267Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/kemono-giga-online",
-	"url": "https://www.brmangas.net/manga/kemono-giga-online/"
-}

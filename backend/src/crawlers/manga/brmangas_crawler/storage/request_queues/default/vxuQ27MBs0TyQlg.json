@@ -1,9 +1,0 @@
-{
-	"id": "vxuQ27MBs0TyQlg",
-	"json": "{\"id\":\"vxuQ27MBs0TyQlg\",\"url\":\"https://www.brmangas.net/manga/gekkou-teien-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/gekkou-teien-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/gekkou-teien-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:24.335Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/gekkou-teien-online",
-	"url": "https://www.brmangas.net/manga/gekkou-teien-online/"
-}

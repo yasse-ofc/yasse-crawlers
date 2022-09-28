@@ -1,9 +1,0 @@
-{
-	"id": "RNTSyrZdJK8w9g1",
-	"json": "{\"id\":\"RNTSyrZdJK8w9g1\",\"url\":\"https://www.brmangas.net/manga/batsu-gal-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/batsu-gal-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/batsu-gal-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:34.804Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/batsu-gal-online",
-	"url": "https://www.brmangas.net/manga/batsu-gal-online/"
-}

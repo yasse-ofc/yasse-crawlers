@@ -1,9 +1,0 @@
-{
-	"id": "8WaA36wW1fqauCm",
-	"json": "{\"id\":\"8WaA36wW1fqauCm\",\"url\":\"https://www.brmangas.net/manga/xian-ni-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/xian-ni-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/xian-ni-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:05.773Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/xian-ni-online",
-	"url": "https://www.brmangas.net/manga/xian-ni-online/"
-}

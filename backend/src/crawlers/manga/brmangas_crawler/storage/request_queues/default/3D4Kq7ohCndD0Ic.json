@@ -1,9 +1,0 @@
-{
-	"id": "3D4Kq7ohCndD0Ic",
-	"json": "{\"id\":\"3D4Kq7ohCndD0Ic\",\"url\":\"https://www.brmangas.net/manga/the-fable-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/the-fable-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/the-fable-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:02.140Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/the-fable-online",
-	"url": "https://www.brmangas.net/manga/the-fable-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cUzXMdE41XhK4IP",
-	"json": "{\"id\":\"cUzXMdE41XhK4IP\",\"url\":\"https://www.brmangas.net/manga/radiant-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/radiant-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/radiant-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:49:46.771Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/radiant-online",
-	"url": "https://www.brmangas.net/manga/radiant-online/"
-}

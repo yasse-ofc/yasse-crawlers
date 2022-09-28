@@ -1,9 +1,0 @@
-{
-	"id": "cTMlBZYLq85h0DW",
-	"json": "{\"id\":\"cTMlBZYLq85h0DW\",\"url\":\"https://www.brmangas.net/manga/1001-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/1001-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/1001-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:22.169Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/1001-online",
-	"url": "https://www.brmangas.net/manga/1001-online/"
-}

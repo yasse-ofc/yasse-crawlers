@@ -1,9 +1,0 @@
-{
-	"id": "4pELwKsQm36cM6s",
-	"json": "{\"id\":\"4pELwKsQm36cM6s\",\"url\":\"https://www.brmangas.net/manga/amagami-various-artists-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/amagami-various-artists-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/amagami-various-artists-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:29.009Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/amagami-various-artists-online",
-	"url": "https://www.brmangas.net/manga/amagami-various-artists-online/"
-}

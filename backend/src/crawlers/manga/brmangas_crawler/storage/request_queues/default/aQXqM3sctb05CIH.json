@@ -1,9 +1,0 @@
-{
-	"id": "aQXqM3sctb05CIH",
-	"json": "{\"id\":\"aQXqM3sctb05CIH\",\"url\":\"https://www.brmangas.net/manga/cerberus-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/cerberus-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/cerberus-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:35.080Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/cerberus-online",
-	"url": "https://www.brmangas.net/manga/cerberus-online/"
-}

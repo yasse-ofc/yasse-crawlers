@@ -1,9 +1,0 @@
-{
-	"id": "MIHXTFMU1GPrSMe",
-	"json": "{\"id\":\"MIHXTFMU1GPrSMe\",\"url\":\"https://www.brmangas.net/manga/tales-of-innocence-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/tales-of-innocence-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/tales-of-innocence-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:37.364Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/tales-of-innocence-online",
-	"url": "https://www.brmangas.net/manga/tales-of-innocence-online/"
-}

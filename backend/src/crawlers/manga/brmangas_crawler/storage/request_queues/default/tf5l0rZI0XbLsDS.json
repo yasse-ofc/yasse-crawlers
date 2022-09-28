@@ -1,9 +1,0 @@
-{
-	"id": "tf5l0rZI0XbLsDS",
-	"json": "{\"id\":\"tf5l0rZI0XbLsDS\",\"url\":\"https://www.brmangas.net/manga/cowa-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/cowa-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/cowa-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:12.025Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/cowa-online",
-	"url": "https://www.brmangas.net/manga/cowa-online/"
-}

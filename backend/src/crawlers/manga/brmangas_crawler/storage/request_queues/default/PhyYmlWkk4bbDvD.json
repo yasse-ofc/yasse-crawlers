@@ -1,9 +1,0 @@
-{
-	"id": "PhyYmlWkk4bbDvD",
-	"json": "{\"id\":\"PhyYmlWkk4bbDvD\",\"url\":\"https://www.brmangas.net/manga/a-man-of-virtue-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/a-man-of-virtue-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/a-man-of-virtue-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/home/p1zza/Documents/manga-br-search-engine/backend/src/crawlers/manga/brmangas_crawler/node_modules/@apify/src/index.ts:88:74)\\n    at listOnTimeout (node:internal/timers:559:17)\\n    at processTimers (node:internal/timers:502:7)\"],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:55:15.150Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 1,
-	"uniqueKey": "https://www.brmangas.net/manga/a-man-of-virtue-online",
-	"url": "https://www.brmangas.net/manga/a-man-of-virtue-online/"
-}

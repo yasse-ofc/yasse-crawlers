@@ -1,9 +1,0 @@
-{
-	"id": "uFzV0C3jeb5dYb3",
-	"json": "{\"id\":\"uFzV0C3jeb5dYb3\",\"url\":\"https://www.brmangas.net/manga/45-seconds-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/45-seconds-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/45-seconds-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:41.145Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/45-seconds-online",
-	"url": "https://www.brmangas.net/manga/45-seconds-online/"
-}

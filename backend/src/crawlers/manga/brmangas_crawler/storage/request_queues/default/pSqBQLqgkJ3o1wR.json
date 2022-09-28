@@ -1,9 +1,0 @@
-{
-	"id": "pSqBQLqgkJ3o1wR",
-	"json": "{\"id\":\"pSqBQLqgkJ3o1wR\",\"url\":\"https://www.brmangas.net/manga/billy-bat-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/billy-bat-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/billy-bat-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:59.857Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/billy-bat-online",
-	"url": "https://www.brmangas.net/manga/billy-bat-online/"
-}

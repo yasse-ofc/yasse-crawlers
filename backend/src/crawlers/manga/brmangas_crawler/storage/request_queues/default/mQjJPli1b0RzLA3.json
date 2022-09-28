@@ -1,9 +1,0 @@
-{
-	"id": "mQjJPli1b0RzLA3",
-	"json": "{\"id\":\"mQjJPli1b0RzLA3\",\"url\":\"https://www.brmangas.net/manga/hanma-baki-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/hanma-baki-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/hanma-baki-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:48:51.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/hanma-baki-online",
-	"url": "https://www.brmangas.net/manga/hanma-baki-online/"
-}

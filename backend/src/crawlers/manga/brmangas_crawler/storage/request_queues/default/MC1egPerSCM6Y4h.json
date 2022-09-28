@@ -1,9 +1,0 @@
-{
-	"id": "MC1egPerSCM6Y4h",
-	"json": "{\"id\":\"MC1egPerSCM6Y4h\",\"url\":\"https://www.brmangas.net/manga/abara-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/abara-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/abara-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:56.453Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/abara-online",
-	"url": "https://www.brmangas.net/manga/abara-online/"
-}

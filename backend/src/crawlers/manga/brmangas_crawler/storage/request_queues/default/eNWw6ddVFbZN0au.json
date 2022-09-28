@@ -1,9 +1,0 @@
-{
-	"id": "eNWw6ddVFbZN0au",
-	"json": "{\"id\":\"eNWw6ddVFbZN0au\",\"url\":\"https://www.brmangas.net/manga/magi-craft-meister-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/magi-craft-meister-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/magi-craft-meister-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:15.472Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/magi-craft-meister-online",
-	"url": "https://www.brmangas.net/manga/magi-craft-meister-online/"
-}

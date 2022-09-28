@@ -1,9 +1,0 @@
-{
-	"id": "C7vjQXPUeQugxVH",
-	"json": "{\"id\":\"C7vjQXPUeQugxVH\",\"url\":\"https://www.brmangas.net/manga/natsume-arata-no-kekkon-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/natsume-arata-no-kekkon-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/natsume-arata-no-kekkon-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:07.309Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/natsume-arata-no-kekkon-online",
-	"url": "https://www.brmangas.net/manga/natsume-arata-no-kekkon-online/"
-}

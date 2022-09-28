@@ -1,9 +1,0 @@
-{
-	"id": "k5VsYdQOmF09okt",
-	"json": "{\"id\":\"k5VsYdQOmF09okt\",\"url\":\"https://www.brmangas.net/manga/genshiken-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/genshiken-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/genshiken-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:31.740Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/genshiken-online",
-	"url": "https://www.brmangas.net/manga/genshiken-online/"
-}

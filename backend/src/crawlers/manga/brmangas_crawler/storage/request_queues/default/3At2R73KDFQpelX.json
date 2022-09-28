@@ -1,9 +1,0 @@
-{
-	"id": "3At2R73KDFQpelX",
-	"json": "{\"id\":\"3At2R73KDFQpelX\",\"url\":\"https://www.brmangas.net/manga/strange-dragon-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/strange-dragon-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/strange-dragon-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:31.862Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/strange-dragon-online",
-	"url": "https://www.brmangas.net/manga/strange-dragon-online/"
-}

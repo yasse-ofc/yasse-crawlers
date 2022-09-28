@@ -1,9 +1,0 @@
-{
-	"id": "pIr8tB76oav1Mg0",
-	"json": "{\"id\":\"pIr8tB76oav1Mg0\",\"url\":\"https://www.brmangas.net/manga/1-ichi-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/1-ichi-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/1-ichi-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:39.959Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/1-ichi-online",
-	"url": "https://www.brmangas.net/manga/1-ichi-online/"
-}

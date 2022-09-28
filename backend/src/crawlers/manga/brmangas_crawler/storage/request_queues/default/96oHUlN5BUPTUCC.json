@@ -1,9 +1,0 @@
-{
-	"id": "96oHUlN5BUPTUCC",
-	"json": "{\"id\":\"96oHUlN5BUPTUCC\",\"url\":\"https://www.brmangas.net/manga/kingdom-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/kingdom-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/kingdom-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:48:48.370Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/kingdom-online",
-	"url": "https://www.brmangas.net/manga/kingdom-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "TzBqAfkGdhXPaWM",
-	"json": "{\"id\":\"TzBqAfkGdhXPaWM\",\"url\":\"https://www.brmangas.net/manga/vinland-saga-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/vinland-saga-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/vinland-saga-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:48:17.721Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/vinland-saga-online",
-	"url": "https://www.brmangas.net/manga/vinland-saga-online/"
-}

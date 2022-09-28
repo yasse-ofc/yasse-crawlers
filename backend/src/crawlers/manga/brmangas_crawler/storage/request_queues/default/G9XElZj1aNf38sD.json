@@ -1,9 +1,0 @@
-{
-	"id": "G9XElZj1aNf38sD",
-	"json": "{\"id\":\"G9XElZj1aNf38sD\",\"url\":\"https://www.brmangas.net/manga/okusan-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/okusan-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/okusan-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:06.592Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/okusan-online",
-	"url": "https://www.brmangas.net/manga/okusan-online/"
-}

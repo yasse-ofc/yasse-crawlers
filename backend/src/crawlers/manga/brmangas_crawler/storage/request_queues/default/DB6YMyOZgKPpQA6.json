@@ -1,9 +1,0 @@
-{
-	"id": "DB6YMyOZgKPpQA6",
-	"json": "{\"id\":\"DB6YMyOZgKPpQA6\",\"url\":\"https://www.brmangas.net/manga/sword-art-online-project-alicization-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/sword-art-online-project-alicization-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/sword-art-online-project-alicization-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:26.326Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/sword-art-online-project-alicization-online",
-	"url": "https://www.brmangas.net/manga/sword-art-online-project-alicization-online/"
-}

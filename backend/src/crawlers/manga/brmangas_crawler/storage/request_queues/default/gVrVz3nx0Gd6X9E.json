@@ -1,9 +1,0 @@
-{
-	"id": "gVrVz3nx0Gd6X9E",
-	"json": "{\"id\":\"gVrVz3nx0Gd6X9E\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/1/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:48:27.587Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/1",
-	"url": "https://www.brmangas.net/lista-de-manga/page/1/"
-}

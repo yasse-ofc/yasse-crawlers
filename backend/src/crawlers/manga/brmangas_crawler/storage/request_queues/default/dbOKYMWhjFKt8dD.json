@@ -1,9 +1,0 @@
-{
-	"id": "dbOKYMWhjFKt8dD",
-	"json": "{\"id\":\"dbOKYMWhjFKt8dD\",\"url\":\"https://www.brmangas.net/manga/chobits-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/chobits-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/chobits-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:29.207Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/chobits-online",
-	"url": "https://www.brmangas.net/manga/chobits-online/"
-}

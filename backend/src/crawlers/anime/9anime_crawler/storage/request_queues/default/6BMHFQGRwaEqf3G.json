@@ -1,9 +1,0 @@
-{
-	"id": "6BMHFQGRwaEqf3G",
-	"json": "{\"id\":\"6BMHFQGRwaEqf3G\",\"url\":\"https://9anime.vc/az-list/?page=16\",\"loadedUrl\":\"https://9anime.vc/az-list/?page=16\",\"uniqueKey\":\"https://9anime.vc/az-list?page=16\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-28T19:15:05.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://9anime.vc/az-list?page=16",
-	"url": "https://9anime.vc/az-list/?page=16"
-}

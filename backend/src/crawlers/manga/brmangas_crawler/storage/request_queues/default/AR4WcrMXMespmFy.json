@@ -1,9 +1,0 @@
-{
-	"id": "AR4WcrMXMespmFy",
-	"json": "{\"id\":\"AR4WcrMXMespmFy\",\"url\":\"https://www.brmangas.net/manga/circle-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/circle-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/circle-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:53.949Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/circle-online",
-	"url": "https://www.brmangas.net/manga/circle-online/"
-}

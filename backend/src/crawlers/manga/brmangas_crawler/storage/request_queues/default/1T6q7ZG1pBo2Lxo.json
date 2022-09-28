@@ -1,9 +1,0 @@
-{
-	"id": "1T6q7ZG1pBo2Lxo",
-	"json": "{\"id\":\"1T6q7ZG1pBo2Lxo\",\"url\":\"https://www.brmangas.net/manga/game-over-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/game-over-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/game-over-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:15.363Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/game-over-online",
-	"url": "https://www.brmangas.net/manga/game-over-online/"
-}

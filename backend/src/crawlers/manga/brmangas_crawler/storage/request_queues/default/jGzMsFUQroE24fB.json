@@ -1,9 +1,0 @@
-{
-	"id": "jGzMsFUQroE24fB",
-	"json": "{\"id\":\"jGzMsFUQroE24fB\",\"url\":\"https://www.brmangas.net/manga/quanzhi-fashi-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/quanzhi-fashi-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/quanzhi-fashi-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:31.495Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/quanzhi-fashi-online",
-	"url": "https://www.brmangas.net/manga/quanzhi-fashi-online/"
-}

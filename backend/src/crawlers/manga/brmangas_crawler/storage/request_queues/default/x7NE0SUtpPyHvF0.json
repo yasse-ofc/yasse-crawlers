@@ -1,9 +1,0 @@
-{
-	"id": "x7NE0SUtpPyHvF0",
-	"json": "{\"id\":\"x7NE0SUtpPyHvF0\",\"url\":\"https://www.brmangas.net/manga/doggerel-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/doggerel-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/doggerel-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:17.061Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/doggerel-online",
-	"url": "https://www.brmangas.net/manga/doggerel-online/"
-}

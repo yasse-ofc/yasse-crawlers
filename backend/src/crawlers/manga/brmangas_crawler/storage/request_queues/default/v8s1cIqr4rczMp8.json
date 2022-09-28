@@ -1,9 +1,0 @@
-{
-	"id": "v8s1cIqr4rczMp8",
-	"json": "{\"id\":\"v8s1cIqr4rczMp8\",\"url\":\"https://www.brmangas.net/manga/hugger-mugger-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/hugger-mugger-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/hugger-mugger-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:43.080Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/hugger-mugger-online",
-	"url": "https://www.brmangas.net/manga/hugger-mugger-online/"
-}

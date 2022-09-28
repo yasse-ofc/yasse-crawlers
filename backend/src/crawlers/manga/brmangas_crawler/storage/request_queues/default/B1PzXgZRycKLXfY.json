@@ -1,9 +1,0 @@
-{
-	"id": "B1PzXgZRycKLXfY",
-	"json": "{\"id\":\"B1PzXgZRycKLXfY\",\"url\":\"https://www.brmangas.net/manga/all-for-9900-won-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/all-for-9900-won-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/all-for-9900-won-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:56.179Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/all-for-9900-won-online",
-	"url": "https://www.brmangas.net/manga/all-for-9900-won-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "7aWFIHE5iAVk0bc",
-	"json": "{\"id\":\"7aWFIHE5iAVk0bc\",\"url\":\"https://www.brmangas.net/manga/cesare-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/cesare-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/cesare-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:24.908Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/cesare-online",
-	"url": "https://www.brmangas.net/manga/cesare-online/"
-}

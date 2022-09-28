@@ -1,9 +1,0 @@
-{
-	"id": "GFEdFVj1zDlOus0",
-	"json": "{\"id\":\"GFEdFVj1zDlOus0\",\"url\":\"https://www.brmangas.net/manga/umineko-sou-days-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/umineko-sou-days-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/umineko-sou-days-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:55:03.445Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/umineko-sou-days-online",
-	"url": "https://www.brmangas.net/manga/umineko-sou-days-online/"
-}

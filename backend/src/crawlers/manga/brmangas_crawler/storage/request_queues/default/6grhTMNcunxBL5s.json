@@ -1,9 +1,0 @@
-{
-	"id": "6grhTMNcunxBL5s",
-	"json": "{\"id\":\"6grhTMNcunxBL5s\",\"url\":\"https://www.brmangas.net/manga/carat-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/carat-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/carat-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:09.348Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/carat-online",
-	"url": "https://www.brmangas.net/manga/carat-online/"
-}

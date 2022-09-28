@@ -1,9 +1,0 @@
-{
-	"id": "dDSOLYxipE4Ixi2",
-	"json": "{\"id\":\"dDSOLYxipE4Ixi2\",\"url\":\"https://www.brmangas.net/manga/boku-no-ie-ni-oide-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/boku-no-ie-ni-oide-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/boku-no-ie-ni-oide-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:27.991Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/boku-no-ie-ni-oide-online",
-	"url": "https://www.brmangas.net/manga/boku-no-ie-ni-oide-online/"
-}

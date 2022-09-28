@@ -1,9 +1,0 @@
-{
-	"id": "wW7SF8ediI3w6ij",
-	"json": "{\"id\":\"wW7SF8ediI3w6ij\",\"url\":\"https://www.brmangas.net/manga/gamers-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/gamers-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/gamers-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:14.841Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/gamers-online",
-	"url": "https://www.brmangas.net/manga/gamers-online/"
-}

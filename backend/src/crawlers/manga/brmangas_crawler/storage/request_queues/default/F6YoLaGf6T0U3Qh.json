@@ -1,9 +1,0 @@
-{
-	"id": "F6YoLaGf6T0U3Qh",
-	"json": "{\"id\":\"F6YoLaGf6T0U3Qh\",\"url\":\"https://www.brmangas.net/manga/shoujo-pandora-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/shoujo-pandora-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/shoujo-pandora-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:08.264Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/shoujo-pandora-online",
-	"url": "https://www.brmangas.net/manga/shoujo-pandora-online/"
-}

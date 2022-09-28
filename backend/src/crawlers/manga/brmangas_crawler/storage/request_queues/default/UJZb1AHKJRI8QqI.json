@@ -1,9 +1,0 @@
-{
-	"id": "UJZb1AHKJRI8QqI",
-	"json": "{\"id\":\"UJZb1AHKJRI8QqI\",\"url\":\"https://www.brmangas.net/manga/kin-to-tetsu-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/kin-to-tetsu-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/kin-to-tetsu-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:41.011Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/kin-to-tetsu-online",
-	"url": "https://www.brmangas.net/manga/kin-to-tetsu-online/"
-}

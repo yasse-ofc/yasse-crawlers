@@ -1,9 +1,0 @@
-{
-	"id": "0IEwu9X3Mj9SC1C",
-	"json": "{\"id\":\"0IEwu9X3Mj9SC1C\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/83/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/83/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/83\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:52:49.448Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/83",
-	"url": "https://www.brmangas.net/lista-de-manga/page/83/"
-}

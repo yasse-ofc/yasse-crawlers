@@ -1,9 +1,0 @@
-{
-	"id": "QG9bcs8BvMSkc42",
-	"json": "{\"id\":\"QG9bcs8BvMSkc42\",\"url\":\"https://www.brmangas.net/manga/heads-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/heads-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/heads-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:28.370Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/heads-online",
-	"url": "https://www.brmangas.net/manga/heads-online/"
-}

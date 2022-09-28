@@ -1,9 +1,0 @@
-{
-	"id": "a8COlQL41acMEmi",
-	"json": "{\"id\":\"a8COlQL41acMEmi\",\"url\":\"https://www.brmangas.net/manga/again-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/again-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/again-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:54.612Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/again-online",
-	"url": "https://www.brmangas.net/manga/again-online/"
-}

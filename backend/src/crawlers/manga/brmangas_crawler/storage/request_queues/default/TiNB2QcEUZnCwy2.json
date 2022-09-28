@@ -1,9 +1,0 @@
-{
-	"id": "TiNB2QcEUZnCwy2",
-	"json": "{\"id\":\"TiNB2QcEUZnCwy2\",\"url\":\"https://www.brmangas.net/manga/tougen-anki-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/tougen-anki-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/tougen-anki-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:49:25.795Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/tougen-anki-online",
-	"url": "https://www.brmangas.net/manga/tougen-anki-online/"
-}

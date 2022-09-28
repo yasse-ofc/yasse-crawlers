@@ -1,9 +1,0 @@
-{
-	"id": "cjGxacuMBUNNjA0",
-	"json": "{\"id\":\"cjGxacuMBUNNjA0\",\"url\":\"https://www.brmangas.net/manga/max-level-returner-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/max-level-returner-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/max-level-returner-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:37.777Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/max-level-returner-online",
-	"url": "https://www.brmangas.net/manga/max-level-returner-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "MvSfOf2DUunZHhb",
-	"json": "{\"id\":\"MvSfOf2DUunZHhb\",\"url\":\"https://www.brmangas.net/manga/bastard-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/bastard-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/bastard-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:31.143Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/bastard-online",
-	"url": "https://www.brmangas.net/manga/bastard-online/"
-}

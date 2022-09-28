@@ -1,9 +1,0 @@
-{
-	"id": "QKE7IGQ2GXRDCcY",
-	"json": "{\"id\":\"QKE7IGQ2GXRDCcY\",\"url\":\"https://www.brmangas.net/manga/temple-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/temple-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/temple-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:09.703Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/temple-online",
-	"url": "https://www.brmangas.net/manga/temple-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "pzIYr0sIxsgQVqd",
-	"json": "{\"id\":\"pzIYr0sIxsgQVqd\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/170/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/170/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/170\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:52:38.785Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/170",
-	"url": "https://www.brmangas.net/lista-de-manga/page/170/"
-}

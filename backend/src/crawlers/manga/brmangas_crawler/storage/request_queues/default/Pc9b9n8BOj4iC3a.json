@@ -1,9 +1,0 @@
-{
-	"id": "Pc9b9n8BOj4iC3a",
-	"json": "{\"id\":\"Pc9b9n8BOj4iC3a\",\"url\":\"https://www.brmangas.net/manga/fragtime-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/fragtime-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/fragtime-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:11.247Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/fragtime-online",
-	"url": "https://www.brmangas.net/manga/fragtime-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "DLQ9Ns2CLfOab1H",
-	"json": "{\"id\":\"DLQ9Ns2CLfOab1H\",\"url\":\"https://www.brmangas.net/manga/chunqing-tayou-huolala-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/chunqing-tayou-huolala-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/chunqing-tayou-huolala-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:54.805Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/chunqing-tayou-huolala-online",
-	"url": "https://www.brmangas.net/manga/chunqing-tayou-huolala-online/"
-}

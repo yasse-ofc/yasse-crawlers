@@ -1,9 +1,0 @@
-{
-	"id": "lIF96X6RJ4YJNoL",
-	"json": "{\"id\":\"lIF96X6RJ4YJNoL\",\"url\":\"https://www.brmangas.net/manga/touch-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/touch-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/touch-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:52.106Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/touch-online",
-	"url": "https://www.brmangas.net/manga/touch-online/"
-}

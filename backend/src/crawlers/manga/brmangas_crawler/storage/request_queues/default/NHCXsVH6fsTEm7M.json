@@ -1,9 +1,0 @@
-{
-	"id": "NHCXsVH6fsTEm7M",
-	"json": "{\"id\":\"NHCXsVH6fsTEm7M\",\"url\":\"https://www.brmangas.net/manga/amatsuki-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/amatsuki-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/amatsuki-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:14.988Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/amatsuki-online",
-	"url": "https://www.brmangas.net/manga/amatsuki-online/"
-}

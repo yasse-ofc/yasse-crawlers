@@ -1,9 +1,0 @@
-{
-	"id": "9cOMDrm28E0g0xc",
-	"json": "{\"id\":\"9cOMDrm28E0g0xc\",\"url\":\"https://www.brmangas.net/manga/rec-doujinshi-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/rec-doujinshi-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/rec-doujinshi-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:59.319Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/rec-doujinshi-online",
-	"url": "https://www.brmangas.net/manga/rec-doujinshi-online/"
-}

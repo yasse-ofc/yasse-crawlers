@@ -1,9 +1,0 @@
-{
-	"id": "fwHvWM3GgdUESah",
-	"json": "{\"id\":\"fwHvWM3GgdUESah\",\"url\":\"https://www.brmangas.net/manga/blue-giant-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/blue-giant-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/blue-giant-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:45.931Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/blue-giant-online",
-	"url": "https://www.brmangas.net/manga/blue-giant-online/"
-}

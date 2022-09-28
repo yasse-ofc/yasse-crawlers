@@ -1,9 +1,0 @@
-{
-	"id": "Rmb3eIHnXajD5PM",
-	"json": "{\"id\":\"Rmb3eIHnXajD5PM\",\"url\":\"https://www.brmangas.net/manga/dengeki-daisy-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/dengeki-daisy-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/dengeki-daisy-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:00.796Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/dengeki-daisy-online",
-	"url": "https://www.brmangas.net/manga/dengeki-daisy-online/"
-}

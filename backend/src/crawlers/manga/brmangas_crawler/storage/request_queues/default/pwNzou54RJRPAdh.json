@@ -1,9 +1,0 @@
-{
-	"id": "pwNzou54RJRPAdh",
-	"json": "{\"id\":\"pwNzou54RJRPAdh\",\"url\":\"https://www.brmangas.net/manga/amu-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/amu-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/amu-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:17.250Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/amu-online",
-	"url": "https://www.brmangas.net/manga/amu-online/"
-}

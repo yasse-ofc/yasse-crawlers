@@ -1,9 +1,0 @@
-{
-	"id": "lmPbjIyDi8R9Htt",
-	"json": "{\"id\":\"lmPbjIyDi8R9Htt\",\"url\":\"https://www.brmangas.net/manga/ubel-blatt-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/ubel-blatt-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/ubel-blatt-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:25.537Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/ubel-blatt-online",
-	"url": "https://www.brmangas.net/manga/ubel-blatt-online/"
-}

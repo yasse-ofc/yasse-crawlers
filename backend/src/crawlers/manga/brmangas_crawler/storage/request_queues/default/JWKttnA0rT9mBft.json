@@ -1,9 +1,0 @@
-{
-	"id": "JWKttnA0rT9mBft",
-	"json": "{\"id\":\"JWKttnA0rT9mBft\",\"url\":\"https://www.brmangas.net/manga/arcana-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/arcana-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/arcana-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:25.241Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/arcana-online",
-	"url": "https://www.brmangas.net/manga/arcana-online/"
-}

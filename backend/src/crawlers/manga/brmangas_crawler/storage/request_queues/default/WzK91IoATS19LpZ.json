@@ -1,9 +1,0 @@
-{
-	"id": "WzK91IoATS19LpZ",
-	"json": "{\"id\":\"WzK91IoATS19LpZ\",\"url\":\"https://www.brmangas.net/manga/mashle-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/mashle-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/mashle-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:48:49.897Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/mashle-online",
-	"url": "https://www.brmangas.net/manga/mashle-online/"
-}

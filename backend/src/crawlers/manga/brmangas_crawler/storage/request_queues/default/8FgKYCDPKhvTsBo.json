@@ -1,9 +1,0 @@
-{
-	"id": "8FgKYCDPKhvTsBo",
-	"json": "{\"id\":\"8FgKYCDPKhvTsBo\",\"url\":\"https://www.brmangas.net/manga/berserk-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/berserk-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/berserk-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:47:59.045Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/berserk-online",
-	"url": "https://www.brmangas.net/manga/berserk-online/"
-}

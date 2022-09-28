@@ -1,9 +1,0 @@
-{
-	"id": "uKdHGujLHE2plnR",
-	"json": "{\"id\":\"uKdHGujLHE2plnR\",\"url\":\"https://www.brmangas.net/manga/ponkotsu-ponko-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/ponkotsu-ponko-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/ponkotsu-ponko-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:31.768Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/ponkotsu-ponko-online",
-	"url": "https://www.brmangas.net/manga/ponkotsu-ponko-online/"
-}

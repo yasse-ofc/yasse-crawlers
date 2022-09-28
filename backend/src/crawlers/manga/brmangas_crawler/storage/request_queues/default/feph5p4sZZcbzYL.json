@@ -1,9 +1,0 @@
-{
-	"id": "feph5p4sZZcbzYL",
-	"json": "{\"id\":\"feph5p4sZZcbzYL\",\"url\":\"https://www.brmangas.net/manga/kengan-omega-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/kengan-omega-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/kengan-omega-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:02.427Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/kengan-omega-online",
-	"url": "https://www.brmangas.net/manga/kengan-omega-online/"
-}

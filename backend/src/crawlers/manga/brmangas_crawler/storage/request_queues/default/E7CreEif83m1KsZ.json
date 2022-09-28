@@ -1,9 +1,0 @@
-{
-	"id": "E7CreEif83m1KsZ",
-	"json": "{\"id\":\"E7CreEif83m1KsZ\",\"url\":\"https://www.brmangas.net/manga/arago-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/arago-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/arago-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:19.340Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/arago-online",
-	"url": "https://www.brmangas.net/manga/arago-online/"
-}

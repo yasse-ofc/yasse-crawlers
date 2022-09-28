@@ -1,9 +1,0 @@
-{
-	"id": "O2eWAVICEFLFQvx",
-	"json": "{\"id\":\"O2eWAVICEFLFQvx\",\"url\":\"https://www.brmangas.net/manga/urusei-yatsura-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/urusei-yatsura-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/urusei-yatsura-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:38.808Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/urusei-yatsura-online",
-	"url": "https://www.brmangas.net/manga/urusei-yatsura-online/"
-}

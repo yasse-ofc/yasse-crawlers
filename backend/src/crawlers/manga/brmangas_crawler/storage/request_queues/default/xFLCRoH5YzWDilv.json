@@ -1,9 +1,0 @@
-{
-	"id": "xFLCRoH5YzWDilv",
-	"json": "{\"id\":\"xFLCRoH5YzWDilv\",\"url\":\"https://www.brmangas.net/manga/dokuro-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/dokuro-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/dokuro-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:51.253Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/dokuro-online",
-	"url": "https://www.brmangas.net/manga/dokuro-online/"
-}

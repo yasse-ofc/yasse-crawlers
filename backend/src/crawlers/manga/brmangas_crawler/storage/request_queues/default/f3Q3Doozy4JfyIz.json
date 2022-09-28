@@ -1,9 +1,0 @@
-{
-	"id": "f3Q3Doozy4JfyIz",
-	"json": "{\"id\":\"f3Q3Doozy4JfyIz\",\"url\":\"https://www.brmangas.net/manga/bj-alex-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/bj-alex-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/bj-alex-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:48:02.135Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/bj-alex-online",
-	"url": "https://www.brmangas.net/manga/bj-alex-online/"
-}

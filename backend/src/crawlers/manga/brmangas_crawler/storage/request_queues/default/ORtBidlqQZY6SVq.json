@@ -1,9 +1,0 @@
-{
-	"id": "ORtBidlqQZY6SVq",
-	"json": "{\"id\":\"ORtBidlqQZY6SVq\",\"url\":\"https://www.brmangas.net/manga/aka-no-grimoire-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/aka-no-grimoire-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/aka-no-grimoire-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:16.722Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/aka-no-grimoire-online",
-	"url": "https://www.brmangas.net/manga/aka-no-grimoire-online/"
-}

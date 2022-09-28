@@ -1,9 +1,0 @@
-{
-	"id": "brLV5YaJLpzgfJJ",
-	"json": "{\"id\":\"brLV5YaJLpzgfJJ\",\"url\":\"https://www.brmangas.net/manga/liberta-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/liberta-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/liberta-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:39.566Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/liberta-online",
-	"url": "https://www.brmangas.net/manga/liberta-online/"
-}

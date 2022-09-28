@@ -1,9 +1,0 @@
-{
-	"id": "2HKkIbYic39N65v",
-	"json": "{\"id\":\"2HKkIbYic39N65v\",\"url\":\"https://www.brmangas.net/manga/your-forma-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/your-forma-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/your-forma-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:11.620Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/your-forma-online",
-	"url": "https://www.brmangas.net/manga/your-forma-online/"
-}

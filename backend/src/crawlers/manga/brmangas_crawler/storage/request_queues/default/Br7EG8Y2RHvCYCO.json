@@ -1,9 +1,0 @@
-{
-	"id": "Br7EG8Y2RHvCYCO",
-	"json": "{\"id\":\"Br7EG8Y2RHvCYCO\",\"url\":\"https://www.brmangas.net/manga/ahiru-no-sora-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/ahiru-no-sora-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/ahiru-no-sora-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:55.502Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/ahiru-no-sora-online",
-	"url": "https://www.brmangas.net/manga/ahiru-no-sora-online/"
-}

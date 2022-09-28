@@ -1,9 +1,0 @@
-{
-	"id": "rX1Y2j8Jb2XdIkl",
-	"json": "{\"id\":\"rX1Y2j8Jb2XdIkl\",\"url\":\"https://www.brmangas.net/manga/fu-fu-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/fu-fu-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/fu-fu-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:52.171Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/fu-fu-online",
-	"url": "https://www.brmangas.net/manga/fu-fu-online/"
-}

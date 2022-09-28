@@ -1,9 +1,0 @@
-{
-	"id": "i1eXfK027gXkmDD",
-	"json": "{\"id\":\"i1eXfK027gXkmDD\",\"url\":\"https://www.brmangas.net/manga/houyou-jikken-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/houyou-jikken-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/houyou-jikken-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:55:12.105Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/houyou-jikken-online",
-	"url": "https://www.brmangas.net/manga/houyou-jikken-online/"
-}

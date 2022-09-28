@@ -1,9 +1,0 @@
-{
-	"id": "EDxAuyTcthqvPRH",
-	"json": "{\"id\":\"EDxAuyTcthqvPRH\",\"url\":\"https://www.brmangas.net/manga/here-u-are-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/here-u-are-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/here-u-are-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:49:06.291Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/here-u-are-online",
-	"url": "https://www.brmangas.net/manga/here-u-are-online/"
-}

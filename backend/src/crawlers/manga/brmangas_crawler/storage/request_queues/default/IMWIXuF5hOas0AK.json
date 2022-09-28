@@ -1,9 +1,0 @@
-{
-	"id": "IMWIXuF5hOas0AK",
-	"json": "{\"id\":\"IMWIXuF5hOas0AK\",\"url\":\"https://www.brmangas.net/manga/corp-shitsurakuen-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/corp-shitsurakuen-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/corp-shitsurakuen-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:21.362Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/corp-shitsurakuen-online",
-	"url": "https://www.brmangas.net/manga/corp-shitsurakuen-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "zF2GYgQoIs4BPij",
-	"json": "{\"id\":\"zF2GYgQoIs4BPij\",\"url\":\"https://www.brmangas.net/manga/as-long-as-you-like-it-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/as-long-as-you-like-it-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/as-long-as-you-like-it-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:58.623Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/as-long-as-you-like-it-online",
-	"url": "https://www.brmangas.net/manga/as-long-as-you-like-it-online/"
-}

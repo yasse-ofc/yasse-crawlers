@@ -1,9 +1,0 @@
-{
-	"id": "CT99vbNyFCg4A9u",
-	"json": "{\"id\":\"CT99vbNyFCg4A9u\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/67/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/67/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/67\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:51:56.313Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/67",
-	"url": "https://www.brmangas.net/lista-de-manga/page/67/"
-}

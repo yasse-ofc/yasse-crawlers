@@ -1,9 +1,0 @@
-{
-	"id": "PpLCprinobVNAr9",
-	"json": "{\"id\":\"PpLCprinobVNAr9\",\"url\":\"https://www.brmangas.net/manga/alice-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/alice-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/alice-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:12.842Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/alice-online",
-	"url": "https://www.brmangas.net/manga/alice-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "1fG1cuh8ei32eD1",
-	"json": "{\"id\":\"1fG1cuh8ei32eD1\",\"url\":\"https://www.brmangas.net/manga/dragon-ball-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/dragon-ball-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/dragon-ball-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:49:59.106Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/dragon-ball-online",
-	"url": "https://www.brmangas.net/manga/dragon-ball-online/"
-}

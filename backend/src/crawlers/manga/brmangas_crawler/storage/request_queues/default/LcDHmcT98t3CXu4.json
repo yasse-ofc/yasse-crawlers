@@ -1,9 +1,0 @@
-{
-	"id": "LcDHmcT98t3CXu4",
-	"json": "{\"id\":\"LcDHmcT98t3CXu4\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/218/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/218/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/218\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:49:56.024Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/218",
-	"url": "https://www.brmangas.net/lista-de-manga/page/218/"
-}

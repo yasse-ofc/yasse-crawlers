@@ -1,9 +1,0 @@
-{
-	"id": "Sb7EPJbxesVgurd",
-	"json": "{\"id\":\"Sb7EPJbxesVgurd\",\"url\":\"https://www.brmangas.net/manga/kuragehime-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/kuragehime-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/kuragehime-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:35.395Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/kuragehime-online",
-	"url": "https://www.brmangas.net/manga/kuragehime-online/"
-}

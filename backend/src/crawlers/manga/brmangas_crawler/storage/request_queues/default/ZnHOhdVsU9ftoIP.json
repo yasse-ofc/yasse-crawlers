@@ -1,9 +1,0 @@
-{
-	"id": "ZnHOhdVsU9ftoIP",
-	"json": "{\"id\":\"ZnHOhdVsU9ftoIP\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/115/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/115/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/115\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:53:56.335Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/115",
-	"url": "https://www.brmangas.net/lista-de-manga/page/115/"
-}

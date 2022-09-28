@@ -1,9 +1,0 @@
-{
-	"id": "k6WmRjIRgfwbdnn",
-	"json": "{\"id\":\"k6WmRjIRgfwbdnn\",\"url\":\"https://www.brmangas.net/manga/dear-my-teacher-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/dear-my-teacher-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/dear-my-teacher-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:55:06.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/dear-my-teacher-online",
-	"url": "https://www.brmangas.net/manga/dear-my-teacher-online/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "BOM1RKyIph57vN9",
-	"json": "{\"id\":\"BOM1RKyIph57vN9\",\"url\":\"https://www.brmangas.net/manga/b-group-no-shounen-x-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/b-group-no-shounen-x-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/b-group-no-shounen-x-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:35.277Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.brmangas.net/manga/b-group-no-shounen-x-online",
-	"url": "https://www.brmangas.net/manga/b-group-no-shounen-x-online/"
-}
