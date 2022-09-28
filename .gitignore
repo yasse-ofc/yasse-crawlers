@@ -103,8 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-# Reference folder
-references/
-
 # VSCode Workspace Settings
 .vscode/
+
+# Storage
+storage/
