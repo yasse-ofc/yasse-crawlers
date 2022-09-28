@@ -1,0 +1,9 @@
+{
+	"id": "3EUA7kyRz7Gny7m",
+	"json": "{\"id\":\"3EUA7kyRz7Gny7m\",\"url\":\"https://www.brmangas.net/manga/haikyuu-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/haikyuu-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/haikyuu-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:49:00.210Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/haikyuu-online",
+	"url": "https://www.brmangas.net/manga/haikyuu-online/"
+}

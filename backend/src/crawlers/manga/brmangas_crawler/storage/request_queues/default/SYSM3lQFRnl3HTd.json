@@ -1,0 +1,9 @@
+{
+	"id": "SYSM3lQFRnl3HTd",
+	"json": "{\"id\":\"SYSM3lQFRnl3HTd\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/155/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/155/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/155\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:53:15.471Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/155",
+	"url": "https://www.brmangas.net/lista-de-manga/page/155/"
+}

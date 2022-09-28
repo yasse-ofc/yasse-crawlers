@@ -1,0 +1,9 @@
+{
+	"id": "6VmLVzqc95xrvJV",
+	"json": "{\"id\":\"6VmLVzqc95xrvJV\",\"url\":\"https://www.brmangas.net/manga/and-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/and-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/and-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:08.602Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/and-online",
+	"url": "https://www.brmangas.net/manga/and-online/"
+}

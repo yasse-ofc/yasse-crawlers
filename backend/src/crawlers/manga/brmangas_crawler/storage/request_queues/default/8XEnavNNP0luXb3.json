@@ -1,0 +1,9 @@
+{
+	"id": "8XEnavNNP0luXb3",
+	"json": "{\"id\":\"8XEnavNNP0luXb3\",\"url\":\"https://www.brmangas.net/manga/naruto-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/naruto-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/naruto-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:48:44.018Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/naruto-online",
+	"url": "https://www.brmangas.net/manga/naruto-online/"
+}

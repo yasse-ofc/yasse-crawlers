@@ -1,0 +1,9 @@
+{
+	"id": "0UOwhEunlxnkf94",
+	"json": "{\"id\":\"0UOwhEunlxnkf94\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/90/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/90/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/90\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:52:56.952Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/90",
+	"url": "https://www.brmangas.net/lista-de-manga/page/90/"
+}

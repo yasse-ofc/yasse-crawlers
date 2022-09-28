@@ -1,0 +1,9 @@
+{
+	"id": "T0iGVb8zS7Q0yHr",
+	"json": "{\"id\":\"T0iGVb8zS7Q0yHr\",\"url\":\"https://www.brmangas.net/manga/finder-series-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/finder-series-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/finder-series-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:32.537Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/finder-series-online",
+	"url": "https://www.brmangas.net/manga/finder-series-online/"
+}

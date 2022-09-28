@@ -1,0 +1,9 @@
+{
+	"id": "4kwXmhBlAxleNHP",
+	"json": "{\"id\":\"4kwXmhBlAxleNHP\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/15/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/15/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/15\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:48:14.447Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/15",
+	"url": "https://www.brmangas.net/lista-de-manga/page/15/"
+}

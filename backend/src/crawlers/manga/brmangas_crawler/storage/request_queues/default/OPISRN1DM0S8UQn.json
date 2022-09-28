@@ -1,0 +1,9 @@
+{
+	"id": "OPISRN1DM0S8UQn",
+	"json": "{\"id\":\"OPISRN1DM0S8UQn\",\"url\":\"https://www.brmangas.net/manga/mens-life-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/mens-life-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/mens-life-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:25.268Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/mens-life-online",
+	"url": "https://www.brmangas.net/manga/mens-life-online/"
+}

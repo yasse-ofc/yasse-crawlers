@@ -1,0 +1,9 @@
+{
+	"id": "dFX8vH0NRIWUPnv",
+	"json": "{\"id\":\"dFX8vH0NRIWUPnv\",\"url\":\"https://www.brmangas.net/manga/big-order-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/big-order-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/big-order-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:32.484Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/big-order-online",
+	"url": "https://www.brmangas.net/manga/big-order-online/"
+}

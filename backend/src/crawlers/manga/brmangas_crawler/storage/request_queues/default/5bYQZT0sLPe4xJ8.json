@@ -1,0 +1,9 @@
+{
+	"id": "5bYQZT0sLPe4xJ8",
+	"json": "{\"id\":\"5bYQZT0sLPe4xJ8\",\"url\":\"https://www.brmangas.net/manga/clannad-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/clannad-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/clannad-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:54:52.690Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/clannad-online",
+	"url": "https://www.brmangas.net/manga/clannad-online/"
+}

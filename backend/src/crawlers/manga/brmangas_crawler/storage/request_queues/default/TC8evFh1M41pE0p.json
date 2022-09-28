@@ -1,0 +1,9 @@
+{
+	"id": "TC8evFh1M41pE0p",
+	"json": "{\"id\":\"TC8evFh1M41pE0p\",\"url\":\"https://www.brmangas.net/manga/darling-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/darling-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/darling-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:15.357Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/darling-online",
+	"url": "https://www.brmangas.net/manga/darling-online/"
+}

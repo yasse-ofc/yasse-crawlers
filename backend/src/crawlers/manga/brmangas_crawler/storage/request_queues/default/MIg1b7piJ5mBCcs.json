@@ -1,0 +1,9 @@
+{
+	"id": "MIg1b7piJ5mBCcs",
+	"json": "{\"id\":\"MIg1b7piJ5mBCcs\",\"url\":\"https://www.brmangas.net/manga/persona-3-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/persona-3-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/persona-3-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:53:36.039Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/persona-3-online",
+	"url": "https://www.brmangas.net/manga/persona-3-online/"
+}

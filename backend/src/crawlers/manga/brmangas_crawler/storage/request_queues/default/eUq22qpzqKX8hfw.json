@@ -1,0 +1,9 @@
+{
+	"id": "eUq22qpzqKX8hfw",
+	"json": "{\"id\":\"eUq22qpzqKX8hfw\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/61/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/61/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/61\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:51:44.536Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/61",
+	"url": "https://www.brmangas.net/lista-de-manga/page/61/"
+}

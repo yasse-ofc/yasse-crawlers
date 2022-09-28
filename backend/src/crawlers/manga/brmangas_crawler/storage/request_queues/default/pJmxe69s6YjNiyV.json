@@ -1,0 +1,9 @@
+{
+	"id": "pJmxe69s6YjNiyV",
+	"json": "{\"id\":\"pJmxe69s6YjNiyV\",\"url\":\"https://www.brmangas.net/manga/blast-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/blast-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/blast-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:52:26.371Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/blast-online",
+	"url": "https://www.brmangas.net/manga/blast-online/"
+}

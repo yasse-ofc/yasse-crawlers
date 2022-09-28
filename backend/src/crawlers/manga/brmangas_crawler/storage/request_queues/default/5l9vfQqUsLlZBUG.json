@@ -1,0 +1,9 @@
+{
+	"id": "5l9vfQqUsLlZBUG",
+	"json": "{\"id\":\"5l9vfQqUsLlZBUG\",\"url\":\"https://www.brmangas.net/manga/beta-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/beta-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/beta-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:36.338Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/beta-online",
+	"url": "https://www.brmangas.net/manga/beta-online/"
+}

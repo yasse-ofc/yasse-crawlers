@@ -1,0 +1,9 @@
+{
+	"id": "PHV9KrESPKaI1do",
+	"json": "{\"id\":\"PHV9KrESPKaI1do\",\"url\":\"https://www.brmangas.net/manga/tales-of-symphonia-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/tales-of-symphonia-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/tales-of-symphonia-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:55:01.331Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/tales-of-symphonia-online",
+	"url": "https://www.brmangas.net/manga/tales-of-symphonia-online/"
+}

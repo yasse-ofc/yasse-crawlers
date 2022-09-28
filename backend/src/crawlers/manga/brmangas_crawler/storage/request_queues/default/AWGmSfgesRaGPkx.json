@@ -1,0 +1,9 @@
+{
+	"id": "AWGmSfgesRaGPkx",
+	"json": "{\"id\":\"AWGmSfgesRaGPkx\",\"url\":\"https://www.brmangas.net/manga/arkane-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/arkane-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/arkane-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:51:24.845Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/arkane-online",
+	"url": "https://www.brmangas.net/manga/arkane-online/"
+}

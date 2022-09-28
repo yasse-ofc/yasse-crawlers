@@ -32,6 +32,7 @@ Node.js support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 - 🚧 Adopt micro commits strategy
   - Commit for atomic changes so that errors and bugs can be resolved faster
 - 🚧 Integrate backend and frontend
+- 🚧 Separate app in 3 Docker containers: one for the DB, one for the API and one for the crawlers
 - 🚧 Creating an RESTful API using Express so the user can read from DB without having access to it
 
 &nbsp;

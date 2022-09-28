@@ -1,0 +1,9 @@
+{
+	"id": "2MYyRsaemZi7pnK",
+	"json": "{\"id\":\"2MYyRsaemZi7pnK\",\"url\":\"https://www.brmangas.net/manga/the-live-online/\",\"loadedUrl\":\"https://www.brmangas.net/manga/the-live-online/\",\"uniqueKey\":\"https://www.brmangas.net/manga/the-live-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_page\"},\"handledAt\":\"2022-09-27T18:50:55.818Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/manga/the-live-online",
+	"url": "https://www.brmangas.net/manga/the-live-online/"
+}

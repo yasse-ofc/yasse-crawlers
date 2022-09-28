@@ -1,0 +1,9 @@
+{
+	"id": "t8m8rCnim84M7ID",
+	"json": "{\"id\":\"t8m8rCnim84M7ID\",\"url\":\"https://www.brmangas.net/lista-de-manga/page/197/\",\"loadedUrl\":\"https://www.brmangas.net/lista-de-manga/page/197/\",\"uniqueKey\":\"https://www.brmangas.net/lista-de-manga/page/197\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"manga_list_page\"},\"handledAt\":\"2022-09-27T18:51:11.651Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.brmangas.net/lista-de-manga/page/197",
+	"url": "https://www.brmangas.net/lista-de-manga/page/197/"
+}
