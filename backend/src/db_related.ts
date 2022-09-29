@@ -82,8 +82,4 @@ async function searchDB(search_term: string) {
     return result;
 }
 
-if (process.argv[2] == 'create') createDB();
-else if (process.argv[2] == 'delete') deleteDB();
-else if (process.argv[2] == 'search') searchDB(process.argv[3]);
-
 export { searchDB };

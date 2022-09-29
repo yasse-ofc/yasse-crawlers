@@ -40,7 +40,7 @@ Node.js support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 ### [Proxy Related]
 
 - ✅ Use proxies
-- ✅ Creating a proxy pool with auto renew to avoid Cloudflare blocking
+- ✅ Creating a proxy pool with auto renew
 
 &nbsp;
 
@@ -49,16 +49,10 @@ Node.js support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 - 🚧 Create crawlers for the following sites:
   - ✅ [BRMangas](https://brmangas.net)
   - ✅ [Manganato](https://manganato.com/)
-  - ✅ [Anime-Planet](https://www.anime-planet.com)
-  - 🚧 [MangaHost](https://mangahosted.com) (WIP)
-  - 🚧 [MangaToon](https://mangatoon.mobi) (WIP)
-  - 🚧 [Mangalivre](https://mangalivre.net) (WIP)
 - ✅ Send multiple requests at once
 - ✅ Using Puppeteer for JS Rendering
 - ✅ Created list of relevant sites to use
-- 🚧 Change crawler structure
-  - As it is, there is a lot of repeated code
-- 🚧 Set random timer to requests
+- 🚧 Change crawler structure to adopt crawlee
 - 🚧 Creating crawlers for a lot of sites
 
 &nbsp;
@@ -81,8 +75,10 @@ Node.js support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 
 ### [Limitations]
 
-- ❌ Read manga through site
-  - It will only redirect the user to another manga site
+- ❌ Crawl websites with Cloudflare anti-bot features
+  - Sites such as mangalivre won't be crawled for the time being
+- ❌ Read series through site
+  - It will only redirect the user to a site with said series
 - ❌ Update DB daily
   - We are deciding if this is viable right now, but as it is, it will hinder our progress, so we will postpone this feature
   - Maybe this will be possible since we discovered a way to request multiple pages at once
@@ -95,15 +91,11 @@ Node.js support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 
 1. Updating DB daily;
 2. Updating DB without reconstructing it from scratch;
-3. Bypassing Cloudflare;
-4. Find an alternative to setTimeOut() for randomly generated time delays to make requests;
 
 Possible Solutions:
 
 1. Make the update process faster and less resource-heavy;
 2. Only update series that changed values;
-3. Set cookies in Puppeteer to fool Cloudflare;
-4. No idea for now;
 
 ### Solved Problems
 
