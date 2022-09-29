@@ -29,6 +29,7 @@ Node.js support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 
 ### [Project Related]
 
+- 🚧 Migrating from JS to TS
 - 🚧 Adopt micro commits strategy
   - Commit for atomic changes so that errors and bugs can be resolved faster
 - 🚧 Integrate backend and frontend
