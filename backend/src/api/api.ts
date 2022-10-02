@@ -1,5 +1,6 @@
-const express = require('express');
-const { searchDB } = require('../db_related');
+import express from 'express';
+import { searchDB } from '../db/db';
+
 const app = express();
 const port = 3000;
 

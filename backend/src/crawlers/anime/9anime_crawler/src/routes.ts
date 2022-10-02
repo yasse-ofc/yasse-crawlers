@@ -2,23 +2,13 @@ import { Dataset, createCheerioRouter } from 'crawlee';
 
 export const router = createCheerioRouter();
 
-router.addDefaultHandler(async ({ enqueueLinks }) => {
-    await enqueueLinks({
-        globs: ['https://9anime.vc/az-list/?page=*'],
-        label: 'manga_list_page'
-    });
-});
-
-router.addHandler('manga_list_page', async ({ $, request, enqueueLinks, log }) => {
-    log.info(`[9ANIME] Page ${request.url.split('=')[1]} fetched.`);
-    
+router.addDefaultHandler(async ({ $, request, enqueueLinks }) => {
     const current_page = parseInt(request.url.split('=')[1]);
     const last_page = parseInt($('.btn.btn-sm.btn-blank').eq(1).text().slice(3));
 
     if ( current_page <= last_page ) {
         await enqueueLinks({
             globs: ['https://9anime.vc/az-list/?page=*'],
-            label: 'manga_list_page'
         });
     }
 

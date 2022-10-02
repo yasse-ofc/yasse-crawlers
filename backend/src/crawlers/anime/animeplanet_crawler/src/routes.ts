@@ -2,26 +2,38 @@ import { Dataset, createCheerioRouter } from 'crawlee';
 
 export const router = createCheerioRouter();
 
-let page_count = 0;
-
-router.addDefaultHandler(async ({ enqueueLinks, log }) => {
-    log.info(`[BRMANGAS] ${++page_count} page fetched.`);
-    
+router.addDefaultHandler(async ({ enqueueLinks }) => {
     await enqueueLinks({
-        globs: ['https://www.brmangas.net/manga/**'],
+        globs: [
+            'https://www.anime-planet.com/anime/*',
+            '!https://www.anime-planet.com/anime/all',
+            '!https://www.anime-planet.com/anime/tags/',
+            '!https://www.anime-planet.com/anime/tags/*',
+            '!https://www.anime-planet.com/anime/seasons/*',
+            '!https://www.anime-planet.com/anime/studios/',
+            '!https://www.anime-planet.com/anime/studios/*',
+            '!https://www.anime-planet.com/anime/all?page=*',
+            '!https://www.anime-planet.com/anime/top-anime',
+            '!https://www.anime-planet.com/anime/watch-online/',
+            '!https://www.anime-planet.com/anime/watch-online/*',
+            '!https://www.anime-planet.com/anime/primary/*',
+            '!https://www.anime-planet.com/anime/recommendations/',
+            '!https://www.anime-planet.com/anime/recommendations/*',
+        ],
         label: 'manga_page'
     });
-
+    
     await enqueueLinks({
-        globs: ['https://www.anime-planet.com/anime/all?page=*'],
-        label: 'manga_list_page'
+        globs: [
+            'https://www.anime-planet.com/anime/watch-online/alpha?page=*',
+        ],
     });
 });
 
 router.addHandler('manga_page', async ({ $, request }) => {
-    const title = $('.titulo').eq(0).text().slice(4, -7).toLowerCase();
+    const title = $('#siteContainer > h1').text().toLowerCase();
     const href = request.url;
-    const img = $('.img-responsive').eq(1).attr('src');
+    const img = $('.screenshots').eq(1).attr('src');
     const latest_chapter = $('.lista_ep a').eq(-1).text().slice(9);
 
     await Dataset.pushData({
@@ -29,19 +41,5 @@ router.addHandler('manga_page', async ({ $, request }) => {
         href,
         img,
         latest_chapter,
-    });
-});
-
-router.addHandler('manga_list_page', async ({ enqueueLinks, log }) => {
-    log.info(`[ANIMEPLANET] ${++page_count} pages fetched.`);
-    
-    await enqueueLinks({
-        globs: ['https://www.brmangas.net/manga/**'],
-        label: 'manga_page'
-    });
-
-    await enqueueLinks({
-        globs: ['https://www.anime-planet.com/anime/all?page=*'],
-        label: 'manga_list_page'
     });
 });

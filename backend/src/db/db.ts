@@ -1,15 +1,18 @@
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import { MongoClient } from "mongodb";
 
 import glob from 'glob';
-import path from 'path';
-
-import { crawler } from './crawlers/anime/9anime_crawler/src/main';
 
 dotenv.config();
 
 const url = `mongodb+srv://adm:${process.env.MONGODB_PASS}@search-engine-db.q0ish8y.mongodb.net/?retryWrites=true&w=majority`;
 const dbName = 'search-engine-db';
+
+function format_search(search_term: string) {
+    const new_string: string = search_term.split('').join('.*');
+
+    return new_string;
+}
 
 async function createDB() {
     const client = await MongoClient.connect(url);
@@ -18,15 +21,14 @@ async function createDB() {
     const collections = ['manga', 'novel', 'webtoon', 'anime', 'test'];
 
     let collection = db.collection(`${collections[0]}`);
-    console.log(`----- Fetching ${collections[0]}... -----`);
-    
+    console.log(`----- Fetching ${collections[0]}... -----`);    
+
     await Promise.all([
-        //brmangas_scraper(collection),
-        //manganato_scraper(collection),
-        //mangahost_scraper(collection),
-        //mangalivre_scraper(collection),
+        glob.sync(`../crawlers/manga/**/output.json`).forEach(file => {
+            collection.insertMany(JSON.parse(file));
+        })
     ]);
-    
+
     collection = db.collection(`${collections[1]}`);
     console.log(`----- Fetching ${collections[1]}... -----`);
     
@@ -40,9 +42,7 @@ async function createDB() {
     collection = db.collection(`${collections[3]}`);
     console.log(`----- Fetching ${collections[3]}... -----`);
 
-    await Promise.all([
-        //animeplanet_scraper(collection),
-    ]);
+    await Promise.all([]);
     
     client.close();
 }
