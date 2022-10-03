@@ -2,17 +2,17 @@ const axios = require('axios');
 const { test_session } = require('../config/default_session');
 
 const list = [
+    //{ name: '[WEBTOON] Lezhinus',    link: 'https://www.lezhinus.com/en' },
+    //{ name: '[ANIME] 9 Anime',       link: 'https://9anime.vc' },
+    //{ name: '[MANGA] BR Mangas',     link: 'https://www.brmangas.net' },
+    //{ name: '[MANGA] Manganato',     link: 'https://www.manganato.com' },
     { name: 'WIP_[ANIME] Anime Planet',  link: 'https://www.anime-planet.com' },
-    { name: 'WIP_[WEBTOON] Lezhinus',    link: 'https://www.lezhinus.com/en' },
     { name: '[ANIME] Goyabu',        link: 'https://goyabu.com' },
     { name: '[ANIME] Anitube',       link: 'https://www.anitube.site' },
     { name: '[ANIME] XP Animes',     link: 'https://xpanimes.com/' },
     { name: '[ANIME] Anime Fire',    link: 'https://animefire.net' },
     { name: '[ANIME] Crunchy Roll',  link: 'https://www.crunchyroll.com' },
     { name: '[ANIME] Animes Online', link: 'https://animesonline.cc' },
-    //{ name: '[ANIME] 9 Anime',       link: 'https://9anime.vc' },
-    //{ name: '[MANGA] BR Mangas',     link: 'https://www.brmangas.net' },
-    //{ name: '[MANGA] Manganato',     link: 'https://www.manganato.com' },
     { name: '[MANGA] Manga Vibe',    link: 'https://mangavibe.top' },
     { name: '[MANGA] Manga Toon',    link: 'https://mangatoon.mobi' },
     { name: '[MANGA] Manga Host',    link: 'https://mangahosted.com' },

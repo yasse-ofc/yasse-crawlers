@@ -1,22 +1,27 @@
 import './DropdownType.css';
-import {useState} from 'react';
+import {useState, useRef} from 'react';
 
-function DropdownType(){
-        const [open, setOpen] = useState(false)
-    return(
+function DropdownType() {
+    const [open, setOpen] = useState(false);
+    const dropdownRef = useRef(null);
+    
+    window.addEventListener('click', (e) => {
+        if (open && dropdownRef.current?.contains(e.target)) {
+            setOpen(false);
+        }
+    });
+
+    return (
         <div className="DropdownType">
-            <button onClick = {()=>setOpen(!open)}>
-                Select type
-            </button>
-            {open && <div>
-                <button> Anime </button>
-            </div>}
-            {open && <div>
-                <button> Mangá </button>
-            </div>}
-            {open && <div>
-                <button> Novel </button>
-            </div>}
+            <button onClick={ () => setOpen(!open) }>Select type</button>
+            {open && (
+                <ul>
+                    <li> Anime </li>
+                    <li> Mangá </li>
+                    <li> Novel </li>
+                    <li> Webtoon </li>
+                </ul>
+            )}
         </div>
     );
 }
