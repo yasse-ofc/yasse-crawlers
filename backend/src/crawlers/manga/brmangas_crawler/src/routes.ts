@@ -18,11 +18,13 @@ router.addHandler('manga_page', async ({ $, request }) => {
     const href = request.url;
     const img = $('.img-responsive').eq(1).attr('src');
     const latest_chapter = $('.lista_ep a').eq(-1).text().slice(9);
+    const source = 'brmangas';
 
     await Dataset.pushData({
         title,
         href,
         img,
         latest_chapter,
+        source,
     });
 });

@@ -17,11 +17,13 @@ router.addHandler('webtoon_page', async ({ page, request }) => {
     const latest_chapter = (episode_to_check[episode_to_check.length - 1] == 'Epilogue') ?
         (parseInt(episode_to_check[episode_to_check.length - 2] ?? '') + 1).toString() :
         episode_to_check[episode_to_check.length - 1];
+    const source = 'lezhinus';
 
     await Dataset.pushData({
         title,
         href,
         img,
         latest_chapter,
+        source,
     });
 });

@@ -17,12 +17,14 @@ router.addDefaultHandler(async ({ $, request, enqueueLinks }) => {
         const href = 'https://9anime.vc' + $(el).find('.dynamic-name').attr('href');
         const img = $(el).find('.film-poster-img').attr('data-src');
         const latest_chapter = $(el).find('.fdi-duration').text().split('/')[0].slice(41);
+        const source = '9animes';
         
         await Dataset.pushData({
             title,
             href,
             img,
             latest_chapter,
+            source,
         });
     });
 });
