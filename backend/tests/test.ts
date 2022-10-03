@@ -1,5 +1,5 @@
 // For more information, see https://crawlee.dev/
-import { PuppeteerCrawler, Dataset, KeyValueStore, ProxyConfiguration, log } from 'crawlee';
+import { CheerioCrawler, Dataset, KeyValueStore, ProxyConfiguration, log } from 'crawlee';
 import { router } from './routes.js';
 import * as dotenv from 'dotenv';
 
@@ -14,7 +14,7 @@ const startUrls = [
     'https://www.lezhinus.com/en/general?page=5&sub_tags=all',
 ];
 
-const crawler = new PuppeteerCrawler({
+const crawler = new CheerioCrawler({
     proxyConfiguration: new ProxyConfiguration({ proxyUrls: [`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`] }),
     requestHandler: router,
 });

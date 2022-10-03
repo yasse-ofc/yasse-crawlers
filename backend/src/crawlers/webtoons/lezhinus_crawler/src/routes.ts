@@ -1,23 +1,22 @@
-import { Dataset, createCheerioRouter } from 'crawlee';
+import { Dataset, createPuppeteerRouter } from 'crawlee';
 
-export const router = createCheerioRouter();
+export const router = createPuppeteerRouter();
 
 router.addDefaultHandler(async ({ enqueueLinks }) => {
     await enqueueLinks({
-        globs: ['https://www.brmangas.net/manga/**'],
-        label: 'manga_page'
-    });
-
-    await enqueueLinks({
-        globs: ['https://www.brmangas.net/lista-de-manga/page/**'],
+        globs: ['https://www.lezhinus.com/en/comic/*'],
+        label: 'webtoon_page'
     });
 });
 
-router.addHandler('manga_page', async ({ $, request }) => {
-    const title = $('.titulo').eq(0).text().slice(4, -7).toLowerCase();
+router.addHandler('webtoon_page', async ({ page, request }) => {
+    const title = (await page.$eval('.comicInfo__title', el => el.textContent) ?? '').toLowerCase();
     const href = request.url;
-    const img = $('.img-responsive').eq(1).attr('src');
-    const latest_chapter = $('.lista_ep a').eq(-1).text().slice(9);
+    const img = await page.$eval('.comicInfo__cover > img', el => el.getAttribute('src'));
+    const episode_to_check = await page.$$eval('.episode__name', eps => eps.map(e => e.textContent));
+    const latest_chapter = (episode_to_check[episode_to_check.length - 1] == 'Epilogue') ?
+        (parseInt(episode_to_check[episode_to_check.length - 2] ?? '') + 1).toString() :
+        episode_to_check[episode_to_check.length - 1];
 
     await Dataset.pushData({
         title,
