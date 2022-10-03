@@ -6,7 +6,7 @@ function DropdownType() {
     const dropdownRef = useRef(null);
     
     window.addEventListener('click', (e) => {
-        if (open && dropdownRef.current?.contains(e.target)) {
+        if (open && dropdownRef.current?.contains(e.target as Node)) {
             setOpen(false);
         }
     });
