@@ -1,10 +1,12 @@
 .SearchResult {
 
     color: white;
-    margin-top: 8px;
+    margin-top: 11px;
     width: 400px;
     height: 500px;
     border-radius: 25px;
-    background: #D96A6A;   
+    overflow: hidden;
+    background: #97A4B5;  
+
 }
 

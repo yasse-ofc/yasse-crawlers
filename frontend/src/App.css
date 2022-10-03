@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap%27');
+
 .App {
   text-align: center;
-
-  align-items: center;
-  display: flexbox;
-  margin: 30% 40%;
+  font-family: 'Nova Square', cursive;
+  font-weight: bold;
+  margin: 3% 40%;
   width: 700px;
   height: 900px;
 
+}
+
+.test{
+
+  display:flex;
+  align-items: center;
+  margin-top: 10px;
 }
 

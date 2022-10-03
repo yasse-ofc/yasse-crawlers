@@ -1,16 +1,13 @@
+import DropdownType from '../DropdownType/DropdownType';
 import './SelectionBar.css';
+
 
 function SelectionBar() {
   return (
     <div className="SelectionBar">
         <div className="section1">
-            Selection
-        </div>
-
-        <div className="section2">
-            Bar
-        </div>
-        
+          <DropdownType/>
+        </div> 
     </div>
 
   );
