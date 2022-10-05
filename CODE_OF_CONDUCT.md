@@ -1,4 +1,4 @@
-# Code of Conduct - Manga Br Search Engine
+# Code of Conduct - YASSE (Yet Another Series Search Engine)
 
 ## Our Pledge
 
