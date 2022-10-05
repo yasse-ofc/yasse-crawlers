@@ -9,9 +9,9 @@ Suporte de documentação e gerenciamento de projetos por [Guilherme Bernardo](h
 
 ## Índice
 
-- [Metas e Limitações](#goals-and-limitations)
-- [Problemas encontrados](#problems-encountered)
-- [Demo](#demo)
+- [Objetivos e Limitações](#objetivos-e-limitações)
+- [Problemas encontrados](#problemas-encontrados)
+- [Demonstração](#demonstração)
 
 ---
 
@@ -23,8 +23,6 @@ Suporte de documentação e gerenciamento de projetos por [Guilherme Bernardo](h
 
 ❌ significa que não foi feito.
 
-
-
 ### [Relacionado ao projeto]
 
 - 🚧 Migrando de JS para TS.
@@ -34,14 +32,10 @@ Suporte de documentação e gerenciamento de projetos por [Guilherme Bernardo](h
 - 🚧 Aplicativo separado em 3 containers Docker: um para o DB, um para a API e outro para os crawlers.
 - 🚧 Criação de uma API RESTful usando Express para que o usuário possa ler do DB sem ter acesso a ele.
 
-
-
 ### [Relacionado ao proxy]
 
 - ✅ Uso de proxies.
 - ✅ Criando um pool de proxy com renovação automática.
-
-
 
 ### [Relacionado ao rastreador]
 
@@ -54,8 +48,6 @@ Suporte de documentação e gerenciamento de projetos por [Guilherme Bernardo](h
 - 🚧 Altere a estrutura do rastreador para adotar o rastreador.
 - 🚧 Criando rastreadores para muitos sites.
 
-
-
 ### [Relacionado ao BD]
 
 - ✅ Criado DB (MongoDB).
@@ -67,8 +59,6 @@ Suporte de documentação e gerenciamento de projetos por [Guilherme Bernardo](h
 - 🚧 Crie uma barra de pesquisa para receber a entrada do usuário.
 - 🚧 Criação de frontend para o site utilizando React.
 - 🚧 Crie um menu suspenso responsivo para a seleção do tipo de série.
-
-
 
 ### [Limitações]
 
@@ -85,13 +75,17 @@ Suporte de documentação e gerenciamento de projetos por [Guilherme Bernardo](h
 ## Problemas encontrados
 
 ### Problemas
+
 1. Atualização diária do DB;
 2. Atualizando o banco de dados sem reconstruí-lo do zero;
+
 Soluções possíveis:
+
 1. Tornar o processo de atualização mais rápido e com menos recursos;
 2. Atualizar apenas séries que alteraram valores;
 
 ### Problemas resolvidos
+
 1. apenas atualizar o BD depois de passar por todas as séries de um site;
 2. Criar pool de proxy com renovação automática;
 
@@ -102,10 +96,8 @@ Soluções:
 
 ---
 
-## DEMO
+## Demonstração
+
 WIP 😎
 
 ---
-
-## Traduções
-(tradução em português)

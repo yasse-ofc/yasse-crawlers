@@ -1,19 +1,27 @@
-# Manga BR Search Engine
+# YASSE (Yet Another Series Search Engine)
 
 ---
 
 An webapp which searches through the most popular manga, anime, novel and webtoon readers in PT-BR/EN-US to find the most updated one for a specific series.
 
 Made by [Eduardo Henrique](https://github.com/ed-henrique) (BACKEND) and [Rosialdo Vidinho](https://github.com/Rosialdo) (FRONTEND).
+
 Documentation and project management support by [Guilherme Bernardo](https://github.com/GuilhermeBn198);
 
 ---
 
 ## Table of Contents
 
+- [Translations](#translations)
 - [Goals and Limitations](#goals-and-limitations)
 - [Problems Encountered](#problems-encountered)
 - [Demo](#demo)
+
+---
+
+## Translations
+
+- [Português](/translations/README_PT_BR.md)
 
 ---
 
@@ -29,7 +37,6 @@ Documentation and project management support by [Guilherme Bernardo](https://git
 
 ### [Project Related]
 
-- 🚧 Migrating from JS to TS.
 - 🚧 Adopt micro commits strategy.
   - Commit for atomic changes so that errors and bugs can be resolved faster.
 - 🚧 Integrate backend and frontend.
@@ -115,6 +122,3 @@ Solutions:
 WIP 😎
 
 ---
-
-## Translations
-[portuguese translation](/translations/readme-br.md)
