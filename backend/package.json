@@ -25,6 +25,7 @@
   "scripts": {
     "start": "ts-node-esm -T ./src/api/api.ts",
     "9anime_crawler": "ts-node-esm -T ./src/crawlers/anime/9anime_crawler/src/main.ts",
+    "goyabu_crawler": "ts-node-esm -T ./src/crawlers/anime/goyabu_crawler/src/main.ts",
     "animeplanet_crawler": "ts-node-esm -T ./src/crawlers/anime/animeplanet_crawler/src/main.ts",
     "brmangas_crawler": "ts-node-esm -T ./src/crawlers/manga/brmangas_crawler/src/main.ts",
     "manganato_crawler": "ts-node-esm -T ./src/crawlers/manga/manganato_crawler/src/main.ts",
