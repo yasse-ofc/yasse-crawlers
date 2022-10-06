@@ -30,12 +30,16 @@
     "brmangas_crawler": "ts-node-esm -T ./src/crawlers/manga/brmangas_crawler/src/main.ts",
     "manganato_crawler": "ts-node-esm -T ./src/crawlers/manga/manganato_crawler/src/main.ts",
     "lezhinus_crawler": "ts-node-esm -T ./src/crawlers/webtoons/lezhinus_crawler/src/main.ts",
+    "test_crawler": "ts-node-esm -T ./goyabu_crawler.ts",
     "test": "jest --watchAll --verbose --detectOpenHandles"
   },
   "dependencies": {
+    "axios": "^1.0.0",
+    "axios-retry": "^3.3.1",
     "crawlee": "^3.0.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "https-proxy-agent": "^5.0.1",
     "mongodb": "^4.9.0",
     "playwright": "^1.26.0"
   },
