@@ -30,6 +30,7 @@
     "brmangas_crawler": "ts-node-esm -T ./src/crawlers/manga/brmangas_crawler/src/main.ts",
     "manganato_crawler": "ts-node-esm -T ./src/crawlers/manga/manganato_crawler/src/main.ts",
     "lezhinus_crawler": "ts-node-esm -T ./src/crawlers/webtoons/lezhinus_crawler/src/main.ts",
+    "mangahosted_crawler": "ts-node-esm -T ./src/crawlers/manga/mangahosted_crawler/src/main.ts",
     "test_crawler": "ts-node-esm -T ./goyabu_crawler.ts",
     "test": "jest --watchAll --verbose --detectOpenHandles"
   },
