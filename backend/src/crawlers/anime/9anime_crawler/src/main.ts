@@ -19,7 +19,7 @@ await crawler.run( startUrls );
 
 const dataset = await Dataset.open();
 
-await KeyValueStore.setValue( '9anime_output', ( await dataset.getData() ).items );
+await KeyValueStore.setValue( '9animeOutput', ( await dataset.getData() ).items );
 
 log.info( `[9ANIME] Fetched all pages.` );
 log.info( `[9ANIME] Total series scraped: ${ ( await dataset.getData() ).total }.` );
