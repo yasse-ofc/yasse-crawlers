@@ -23,8 +23,10 @@ All types of contributions are encouraged and valued. See the [Table of Contents
   - [Your First Code Contribution](#your-first-code-contribution)
   - [Improving The Documentation](#improving-the-documentation)
 - [Styleguides](#styleguides)
+  - [Code](#code)
   - [Commit Messages](#commit-messages)
 - [Join The Project Team](#join-the-project-team)
+- [Attribution](#attribution)
 
 ## Code of Conduct
 
@@ -146,15 +148,18 @@ Updating, improving and correcting the documentation
 
 ## Styleguides
 
-### Commit Messages
-<!-- TODO
+### Code
 
--->
+Use PascalCase for classes, SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated, and camelCase for everything else.
+
+### Commit Messages
+
+Describe what you have done briefly. To make this easier, commit often, even if dealing with small changes.
 
 ## Join The Project Team
-<!-- TODO -->
 
-<!-- omit in toc -->
+If you contribute a lot, eventually you will become part of the team.
+
 ## Attribution
 
 This guide is based on the **contributing-gen**. [Make your own](https://github.com/bttger/contributing-gen)!
