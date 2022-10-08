@@ -1,5 +1,0 @@
-{
-    "storageClientOptions": {
-        "localDataDirectory": "./storage/CRAWLER_NAME/"
-    }
-}

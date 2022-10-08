@@ -108,3 +108,6 @@ dist
 
 # Storage
 storage/
+
+# Fast Script to Delete All Collections
+delete_collections.js

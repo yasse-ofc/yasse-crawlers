@@ -1,13 +1,9 @@
 import { HttpCrawler, Dataset, KeyValueStore, ProxyConfiguration, log } from 'crawlee';
 import { MongoClient, OptionalId } from 'mongodb';
 import * as dotenv from 'dotenv';
+import { insertToDB } from '../../../../db/src/insert_to_db.js';
 
 dotenv.config();
-
-const client = new MongoClient( process.env.MONGODB_LINK ?? '' );
-
-client.connect();
-const collection = client.db( 'search-engine-db' ).collection( 'test' );
 
 const startUrls = [ 'https://goyabu.com/api/show2.php' ];
 
@@ -35,16 +31,14 @@ export const crawler = new HttpCrawler({
         }));
 
         // Removing last element because it holds "null" strings
-        await Dataset.pushData( processedData.slice( 0, -1 ) ); 
-        await collection.insertMany( processedData.slice( 0, -1 ) );
+        // await Dataset.pushData( processedData.slice( 0, -1 ) ); 
+        await insertToDB( 'anime', processedData.slice( 0, -1 ) );
     }
 });
 
 log.info( '[GOYABU] Fetching...' );
 
 await crawler.run( startUrls );
-
-await client.close();
 
 const dataset = await Dataset.open();
 
