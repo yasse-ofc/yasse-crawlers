@@ -18,15 +18,10 @@ router.addDefaultHandler( async ( { enqueueLinks } ) => {
 });
 
 router.addHandler( 'series_page', async ( { $, request } ) => {
-    const title = $( 'h1.title' )
-        .text()
-        .toLowerCase();
+    const title = $( 'h1.title' ).text().toLowerCase();
     const href = request.url;
-    const img = $( '.image-3' )
-        .attr( 'src' );
-    const latestChapter = $( '.chapters > div > a' )
-        .eq( 0 )
-        .text();
+    const img = $( '.image-3' ).attr( 'src' );
+    const latestChapter = $( '.chapters > div > a' ).eq( 0 ).text();
     const source = 'mangahosted';
 
     await Dataset.pushData({

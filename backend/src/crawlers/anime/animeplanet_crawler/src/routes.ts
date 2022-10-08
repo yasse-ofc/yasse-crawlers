@@ -16,18 +16,10 @@ router.addDefaultHandler( async ( { enqueueLinks } ) => {
 });
 
 router.addHandler( 'manga_page', async ( { $, request } ) => {
-    const title = $( '#siteContainer > h1' )
-        .text()
-        .toLowerCase();
+    const title = $( '#siteContainer > h1' ).text().toLowerCase();
     const href = request.url;
-    const img = $( '.screenshots' )
-        .eq( 1 )
-        .attr( 'src' );
-    const latestChapter = $( '.card.landscape > a' )
-        .eq( -1 )
-        .text()
-        .split( ' ' )
-        .pop();
+    const img = $( '.screenshots' ).eq( 1 ).attr( 'src' );
+    const latestChapter = $( '.card.landscape > a' ).eq( -1 ).text().split( ' ' ).pop();
     const source = 'animeplanet';
 
     await Dataset.pushData({

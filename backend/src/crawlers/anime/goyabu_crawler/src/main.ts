@@ -16,11 +16,10 @@ export const crawler = new HttpCrawler({
         proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
     }),
     async requestHandler( { body } ) {
-        const collectedData = await JSON.parse(body.toString());
+        const collectedData = await JSON.parse( body.toString() );
 
         const processedData: OptionalId<Document>[] = Array.from( collectedData.map( ( el: { title: string; slug: string; cover: string; videos: number; } ) => {
-            const title = el.title
-                .toLowerCase();
+            const title = el.title.toLowerCase();
             const href = 'https://goyabu.com/assistir/' + el.slug + '/';
             const img = 'https://goyabu.com/' + el.cover;
             const latestChapter = el.videos;
@@ -41,7 +40,7 @@ export const crawler = new HttpCrawler({
     }
 });
 
-log.info( '[GOYABU] Fetching...');
+log.info( '[GOYABU] Fetching...' );
 
 await crawler.run( startUrls );
 

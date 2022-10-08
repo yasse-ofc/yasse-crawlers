@@ -12,16 +12,10 @@ router.addDefaultHandler( async ( { enqueueLinks } ) => {
 });
 
 router.addHandler( 'series_page', async ( { page, request } ) => {
-    const title = (
-            await page
-            .$eval( '.comicInfo__title', el => el.textContent ) ?? ''
-        )
-        .toLowerCase();
+    const title = ( await page.$eval( '.comicInfo__title', el => el.textContent ) ?? '').toLowerCase();
     const href = request.url;
-    const img = await page
-        .$eval( '.comicInfo__cover > img', el => el.getAttribute( 'src' ) );
-    const pageToCheck = await page
-        .$$eval( '.episode__name', eps => eps.map( e => e.textContent ) );
+    const img = await page.$eval( '.comicInfo__cover > img', el => el.getAttribute( 'src' ) );
+    const pageToCheck = await page.$$eval( '.episode__name', eps => eps.map( e => e.textContent ) );
     const latestChapter = ( pageToCheck[ pageToCheck.length - 1 ] == 'Epilogue' ) ?
         ( parseInt( pageToCheck[ pageToCheck.length - 2 ] ?? '' ) + 1 ).toString() :
         pageToCheck[ pageToCheck.length - 1 ];

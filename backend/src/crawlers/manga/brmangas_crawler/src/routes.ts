@@ -18,19 +18,10 @@ router.addDefaultHandler( async ( { enqueueLinks } ) => {
 });
 
 router.addHandler( 'series_page', async ( { $, request } ) => {
-    const title = $( '.titulo' )
-        .eq( 0 )
-        .text()
-        .slice( 4, -7 )
-        .toLowerCase();
+    const title = $( '.titulo' ).eq( 0 ).text().slice( 4, -7 ).toLowerCase();
     const href = request.url;
-    const img = $( '.img-responsive' )
-        .eq( 1 )
-        .attr( 'src' );
-    const latestChapter = $( '.lista_ep a' )
-        .eq( -1 )
-        .text()
-        .slice( 9 );
+    const img = $( '.img-responsive' ).eq( 1 ).attr( 'src' );
+    const latestChapter = $( '.lista_ep a' ).eq( -1 ).text().slice( 9 );
     const source = 'brmangas';
 
     await Dataset.pushData({
