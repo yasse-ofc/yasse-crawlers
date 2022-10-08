@@ -1,0 +1,29 @@
+{
+  "name": "yasse",
+  "version": "1.0.0",
+  "description": "Find where the series you want to read/watch is up to date.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ed-henrique/yasse.git"
+  },
+  "author": "Eduardo Machado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ed-henrique/yasse/issues"
+  },
+  "homepage": "https://github.com/ed-henrique/yasse#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "typescript": "^4.8.4"
+  }
+}
