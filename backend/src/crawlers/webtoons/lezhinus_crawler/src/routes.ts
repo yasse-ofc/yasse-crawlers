@@ -2,28 +2,36 @@ import { Dataset, createPuppeteerRouter } from 'crawlee';
 
 export const router = createPuppeteerRouter();
 
-router.addDefaultHandler(async ({ enqueueLinks }) => {
+router.addDefaultHandler( async ( { enqueueLinks } ) => {
     await enqueueLinks({
-        globs: ['https://www.lezhinus.com/en/comic/*'],
-        label: 'webtoon_page'
+        globs: [
+            'https://www.lezhinus.com/en/comic/*',
+        ],
+        label: 'series_page',
     });
 });
 
-router.addHandler('webtoon_page', async ({ page, request }) => {
-    const title = (await page.$eval('.comicInfo__title', el => el.textContent) ?? '').toLowerCase();
+router.addHandler( 'series_page', async ( { page, request } ) => {
+    const title = (
+            await page
+            .$eval( '.comicInfo__title', el => el.textContent ) ?? ''
+        )
+        .toLowerCase();
     const href = request.url;
-    const img = await page.$eval('.comicInfo__cover > img', el => el.getAttribute('src'));
-    const episode_to_check = await page.$$eval('.episode__name', eps => eps.map(e => e.textContent));
-    const latest_chapter = (episode_to_check[episode_to_check.length - 1] == 'Epilogue') ?
-        (parseInt(episode_to_check[episode_to_check.length - 2] ?? '') + 1).toString() :
-        episode_to_check[episode_to_check.length - 1];
+    const img = await page
+        .$eval( '.comicInfo__cover > img', el => el.getAttribute( 'src' ) );
+    const pageToCheck = await page
+        .$$eval( '.episode__name', eps => eps.map( e => e.textContent ) );
+    const latestChapter = ( pageToCheck[ pageToCheck.length - 1 ] == 'Epilogue' ) ?
+        ( parseInt( pageToCheck[ pageToCheck.length - 2 ] ?? '' ) + 1 ).toString() :
+        pageToCheck[ pageToCheck.length - 1 ];
     const source = 'lezhinus';
 
     await Dataset.pushData({
         title,
         href,
         img,
-        latest_chapter,
+        latestChapter,
         source,
     });
 });

@@ -1,4 +1,3 @@
-// For more information, see https://crawlee.dev/
 import { PuppeteerCrawler, Dataset, KeyValueStore, ProxyConfiguration, log } from 'crawlee';
 import { router } from './routes.js';
 import * as dotenv from 'dotenv';
@@ -14,20 +13,20 @@ const startUrls = [
     'https://www.lezhinus.com/en/general?page=5&sub_tags=all',
 ];
 
-const crawler = new PuppeteerCrawler({
-    proxyConfiguration: new ProxyConfiguration({ proxyUrls: [`http://${process.env.PROXY_USERNAME}:${process.env.PROXY_PASS}@p.webshare.io:80`] }),
+export const crawler = new PuppeteerCrawler({
+    proxyConfiguration: new ProxyConfiguration({
+        proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
+    }),
     requestHandler: router,
 });
 
-log.debug(`[LEZHINUS] Fetching...`);
+log.info( '[LEZHINUS] Fetching...' );
 
-await crawler.run(startUrls);
+await crawler.run( startUrls );
 
 const dataset = await Dataset.open();
 
-await KeyValueStore.setValue('brmangas_output', (await dataset.getData()).items);
+await KeyValueStore.setValue( 'lezhinusOutput', ( await dataset.getData() ).items );
 
-log.debug(`[LEZHINUS] Fetched all pages.`);
-log.debug(`[LEZHINUS] Total series scraped: ${(await dataset.getData()).total}.`)
-
-export { crawler };
+log.info( '[LEZHINUS] Fetched all pages.' );
+log.info( `[LEZHINUS] Total series scraped: ${ ( await dataset.getData() ).total }.` );

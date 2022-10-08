@@ -13,7 +13,7 @@ export const crawler = new CheerioCrawler({
     requestHandler: router,
 });
 
-log.info( `[9ANIME] Fetching...` );
+log.info( '[9ANIME] Fetching...' );
 
 await crawler.run( startUrls );
 
@@ -21,5 +21,5 @@ const dataset = await Dataset.open();
 
 await KeyValueStore.setValue( '9animeOutput', ( await dataset.getData() ).items );
 
-log.info( `[9ANIME] Fetched all pages.` );
+log.info( '[9ANIME] Fetched all pages.' );
 log.info( `[9ANIME] Total series scraped: ${ ( await dataset.getData() ).total }.` );

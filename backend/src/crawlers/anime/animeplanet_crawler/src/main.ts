@@ -13,7 +13,7 @@ export const crawler = new CheerioCrawler({
     requestHandler: router,
 });
 
-log.info( `[ANIMEPLANET] Fetching...` );
+log.info( '[ANIMEPLANET] Fetching...' );
 
 await crawler.run( startUrls );
 
