@@ -1,5 +1,5 @@
 import { HttpCrawler, Dataset, KeyValueStore, ProxyConfiguration, log } from 'crawlee';
-import { MongoClient, OptionalId, ServerApiVersion } from 'mongodb';
+import { MongoClient, OptionalId } from 'mongodb';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -32,8 +32,8 @@ const crawler = new HttpCrawler({
             }
         }));
 
-        //await Dataset.pushData(processed_data.slice(0, -1)); // Removing last element because it holds "null" strings
-        await collection.insertMany(processed_data.slice(0, -1));
+        //await Dataset.pushData(processed_data.slice(0, -1)); 
+        await collection.insertMany(processed_data.slice(0, -1)); // Removing last element because it holds "null" strings
     }
 });
 
