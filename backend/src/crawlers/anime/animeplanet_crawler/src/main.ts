@@ -22,4 +22,4 @@ const dataset = await Dataset.open();
 await KeyValueStore.setValue( 'animeplanetOutput', ( await dataset.getData() ).items );
 
 log.info( '[ANIMEPLANET] Fetched all pages.' );
-log.info( `[ANIMEPLANET] Total series scraped: ${ ( await dataset.getData() ).total }.` )
+log.info( `[ANIMEPLANET] Total series scraped: ${ ( await dataset.getData() ).total }.` );
