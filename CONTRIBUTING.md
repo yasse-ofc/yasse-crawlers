@@ -153,7 +153,7 @@ Updating, improving and correcting the documentation
 Use:
 
 - PascalCase for classes;
-- snake_case for crawler names;
+- snake_case for crawler names and handler labels;
 - SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated;
 - camelCase for everything else.
 
