@@ -2,7 +2,7 @@
   "name": "yasse",
   "version": "1.0.0",
   "description": "Find where the series you want to read/watch is up to date.",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/ed-henrique/yasse.git"
   },
-  "author": "Eduardo Machado",
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "Eduardo Henrique",
+      "email": "edu.hen.fm@gmail.com",
+      "url": "https://github.com/ed-henrique"
+    },
+    {
+      "name": "Rosialdo Vicente",
+      "email": "rosialdovidinho3@gmail.com",
+      "url": "https://github.com/Rosialdo"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/ed-henrique/yasse/issues"
   },
