@@ -150,7 +150,12 @@ Updating, improving and correcting the documentation
 
 ### Code
 
-Use PascalCase for classes, SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated, and camelCase for everything else.
+Use:
+
+- PascalCase for classes;
+- snake_case for crawler names;
+- SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated;
+- camelCase for everything else.
 
 ### Commit Messages
 
