@@ -157,6 +157,18 @@ Use:
 - SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated;
 - camelCase for everything else.
 
+Set up .env file as following:
+
+```.env
+PROXY_USERNAME=
+PROXY_PASS=
+MONGODB_LINK=
+```
+
+`MONGODB_LINK` will look like this:
+
+`mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`
+
 ### Commit Messages
 
 Describe what you have done briefly. To make this easier, commit often, even if dealing with small changes.
