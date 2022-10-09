@@ -19,8 +19,18 @@
   ],
   "scripts": {
     "start": "ts-node-esm -T ./src/api/api.ts",
-    "test_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/xpanimes_crawler/src/main.ts",
-    "delete_db": "node ./delete_db.js",
+    "start_all_crawlers": "concurrently \"npm:*_crawler\"",
+    
+    "9anime_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/9anime_crawler/src/main.ts",
+    "brmangas_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/brmangas_crawler/src/main.ts",
+    "mangahosted_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/mangahosted_crawler/src/main.ts",
+    "manganato_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/manganato_crawler/src/main.ts",
+
+    "goyabu_crawler": "ts-node-esm -T ./src/crawlers/http_crawlers/src/goyabu_crawler/src/main.ts",
+    
+    "lezhinus_crawler": "ts-node-esm -T ./src/crawlers/puppeteer_crawlers/src/lezhinus_crawler/src/main.ts",
+    
+    "delete_db": "node ./delete_collections.js",
     "test": "jest --watchAll --verbose --detectOpenHandles"
   },
   "repository": {
@@ -36,6 +46,7 @@
   "devDependencies": {
     "@apify/tsconfig": "^0.1.0",
     "@types/jest": "^29.0.1",
+    "concurrently": "^7.4.0",
     "jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
