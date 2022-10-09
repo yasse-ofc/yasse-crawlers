@@ -5,23 +5,25 @@ export const router = createCheerioRouter();
 
 router.addDefaultHandler( async ( { enqueueLinks } ) => {
     await enqueueLinks({
-        selector: 'li.card > a',
+        selector: '.esquerda > ul > li > div > a',
         label: 'series_page'
     });
-    
+
     await enqueueLinks({
         globs: [
-            'https://www.anime-planet.com/anime/watch-online/alpha?page=*',
+            'https://xpanimes.com/category/animes/page/*/'
         ],
     });
 });
 
 router.addHandler( 'series_page', async ( { $, request } ) => {
-    const title = $( '#siteContainer > h1' ).text().toLowerCase();
+    const title = $( '.big.title-single' ).text().slice( 0, -7 ).toLowerCase();
     const href = request.url;
-    const img = $( '.screenshots' ).eq( 1 ).attr( 'src' );
-    const latestChapter = $( '.card.landscape > a' ).eq( -1 ).text().split( ' ' ).pop();
-    const source = 'animeplanet';
+    const img = $( '.capa-single > img' ).attr( 'src' );
+    const latestChapter = $( '.check_lista.lista_personalizada > ul > li' ).text();
+    const source = 'xpanimes';
+
+    console.log(latestChapter);
 
     await insertOneToDB( 'anime', {
         title,
