@@ -11,7 +11,7 @@ const dbName = 'yasse';
 * @param {string} searchTerm - String to be formatted.
 * @return {string} Formatted string.
 */
-function formatSearch( searchTerm: string ) {
+function formatSearch( searchTerm: string ): string {
     const formattedSearch: string = searchTerm.split( '' ).join( '.*' );
 
     return formattedSearch;
