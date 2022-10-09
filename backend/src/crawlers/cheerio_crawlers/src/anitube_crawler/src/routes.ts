@@ -20,7 +20,7 @@ router.addHandler( 'series_page', async ( { $, request } ) => {
     const title = $( '.mwidth > h1' ).text().slice( 0, -21 ).toLowerCase();
     const href = request.url;
     const img = $( '#capaAnime > img' ).attr( 'src' );
-    const latestChapter = $( '.pagAniListaContainer > a' ).eq( -1 ).text().match(/(\d+)$/);
+    const latestChapter = $( '.pagAniListaContainer > a' ).eq( -1 ).text().match(/Episódio (\d+)/);
     const source = 'anitube';
 
     await insertOneToDB( 'test', {

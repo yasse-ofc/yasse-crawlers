@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "start": "ts-node-esm -T ./src/api/api.ts",
-    "test_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/9anime_crawler/src/main.ts",
+    "test_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/anitube_crawler/src/main.ts",
     "delete_db": "node ./delete_db.js",
     "test": "jest --watchAll --verbose --detectOpenHandles"
   },
