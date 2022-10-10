@@ -170,6 +170,7 @@ cd ../backend/src/crawlers/cheerio_crawlers && npm i
 cd ../http_crawlers && npm i
 cd ../puppeteer_crawlers && npm i
 cd ../../db && npm i
+cd ../.. && touch .env
 ```
 
 Set up `.env` file inside the `backend` folder as following:
