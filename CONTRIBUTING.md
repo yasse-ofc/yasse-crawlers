@@ -23,8 +23,10 @@ All types of contributions are encouraged and valued. See the [Table of Contents
   - [Your First Code Contribution](#your-first-code-contribution)
   - [Improving The Documentation](#improving-the-documentation)
 - [Styleguides](#styleguides)
+  - [Code](#code)
   - [Commit Messages](#commit-messages)
 - [Join The Project Team](#join-the-project-team)
+- [Attribution](#attribution)
 
 ## Code of Conduct
 
@@ -146,15 +148,53 @@ Updating, improving and correcting the documentation
 
 ## Styleguides
 
-### Commit Messages
-<!-- TODO
+### Code
 
--->
+Use:
+
+- PascalCase for classes;
+- snake_case for crawler names, file names, handler labels;
+- SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated;
+- camelCase for everything else.
+
+Set up .env file as following:
+
+```.env
+PROXY_USERNAME=
+PROXY_PASS=
+MONGODB_LINK=
+```
+
+We are currently working with [Webshare](https://www.webshare.io/) proxies. You can get 10 proxies for free there, and that's enough for testing before submitting your code. To acquire your credentials do as following:
+
+1. Create an account in [Webshare](https://www.webshare.io/);
+2. Go inside your dashboard;
+3. Go to `Proxy > Rotating Proxy`;
+4. Get your `Proxy Username` and `Proxy Password` there and paste them in your `PROXY_USERNAME` and `PROXY_PASS` respectively;
+5. You are ready to go.
+
+For the database, we are using [MongoDB](https://www.mongodb.com/). It's also free, and the step by step to get your link is the following:
+
+1. Create an account in [MongoDB](https://www.mongodb.com/);
+2. Go to `Deployment > Database`;
+3. Go to `+Create`, then create a shared cluster hosted wherever and with any name;
+4. Create an `username` and random `password` and store them somewhere for the time being;
+5. Return to `Deployment > Database` and go to `Connect` in your DB;
+6. Select `Connect your application`;
+7. Copy the link given to you and paste it into your `MONGODB_LINK`;
+8. Change the `<password>` field to your created password;
+9. Add the `&keepAlive=true` to the end of your link;
+10. Your link should be looking like this: `mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`;
+11. You are ready to go.
+
+### Commit Messages
+
+Describe what you have done briefly. To make this easier, commit often, even if dealing with small changes.
 
 ## Join The Project Team
-<!-- TODO -->
 
-<!-- omit in toc -->
+If you contribute a lot, eventually you will become part of the team.
+
 ## Attribution
 
 This guide is based on the **contributing-gen**. [Make your own](https://github.com/bttger/contributing-gen)!

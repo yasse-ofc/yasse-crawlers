@@ -1,17 +1,17 @@
 import express from 'express';
-import { searchDB } from '../db/db';
+import { searchDB } from '../db/src/db.js';
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use( express.json() );
+app.use( express.urlencoded( { extended: true } ) );
 
-app.post('/', async (req, res) => {
+app.post( '/', async (req, res) => {
     const data = req.body;
-    res.send(await searchDB(data.search));
+    res.send( await searchDB( data.searchTerm ?? 'one piece', data.collectionToSearch ?? 'manga' ) );
 });
 
-app.listen(process.env.PORT || port, () => {
-    console.log(`Example app listening on port ${process.env.PORT || port}`);
+app.listen( process.env.PORT || PORT, () => {
+    console.log( `Example app listening on port ${ process.env.PORT || PORT }` );
 });

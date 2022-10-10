@@ -1,10 +1,9 @@
 {
-  "name": "manga-br-search-engine",
+  "name": "yasse",
   "version": "0.1.0",
-  "description": "A webpage which searches through the most popular manga readers in Brazil to find the most updated one for a specific manga.",
-  "main": "index.ts",
+  "description": "Find where the series you want to read/watch is up to date.",
   "type": "module",
-  "homepage": "https://github.com/ed-henrique/manga-br-search-engine",
+  "homepage": "https://github.com/ed-henrique/yasse#readme",
   "license": "MIT",
   "contributors": [
     {
@@ -18,29 +17,35 @@
       "url": "https://github.com/Rosialdo"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ed-henrique/manga-br-search-engine"
-  },
   "scripts": {
     "start": "ts-node-esm -T ./src/api/api.ts",
-    "9anime_crawler": "ts-node-esm -T ./src/crawlers/anime/9anime_crawler/src/main.ts",
-    "animeplanet_crawler": "ts-node-esm -T ./src/crawlers/anime/animeplanet_crawler/src/main.ts",
-    "brmangas_crawler": "ts-node-esm -T ./src/crawlers/manga/brmangas_crawler/src/main.ts",
-    "manganato_crawler": "ts-node-esm -T ./src/crawlers/manga/manganato_crawler/src/main.ts",
-    "lezhinus_crawler": "ts-node-esm -T ./src/crawlers/webtoons/lezhinus_crawler/src/main.ts",
+    "start_all_crawlers": "concurrently \"npm:*_crawler\"",
+    
+    "9anime_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/9anime_crawler/src/main.ts",
+    "brmangas_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/brmangas_crawler/src/main.ts",
+    "manganato_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/manganato_crawler/src/main.ts",
+
+    "goyabu_crawler": "ts-node-esm -T ./src/crawlers/http_crawlers/src/goyabu_crawler/src/main.ts",
+    
+    "lezhinus_crawler": "ts-node-esm -T ./src/crawlers/puppeteer_crawlers/src/lezhinus_crawler/src/main.ts",
+    
+    "delete_db": "node ./delete_collections.js",
     "test": "jest --watchAll --verbose --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ed-henrique/yasse.git"
   },
   "dependencies": {
     "crawlee": "^3.0.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongodb": "^4.9.0",
-    "playwright": "^1.26.0"
+    "mongodb": "^4.9.0"
   },
   "devDependencies": {
     "@apify/tsconfig": "^0.1.0",
     "@types/jest": "^29.0.1",
+    "concurrently": "^7.4.0",
     "jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"

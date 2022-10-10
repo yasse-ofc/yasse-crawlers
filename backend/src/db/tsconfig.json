@@ -1,18 +1,13 @@
 {
-    "extends": "@apify/tsconfig",
     "compilerOptions": {
+        "moduleResolution": "node",
         "module": "ES2022",
         "target": "ES2022",
         "outDir": "dist",
         "noUnusedLocals": false,
         "lib": ["DOM"]
     },
-    "typeAcquisition": {
-        "include": [
-            "jest"
-        ]
-    },
     "include": [
         "./src/**/*"
-    ],
+    ]
 }

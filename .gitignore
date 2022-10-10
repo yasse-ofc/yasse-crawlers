@@ -107,4 +107,7 @@ dist
 .vscode/
 
 # Storage
-backup/
+storage/
+
+# Fast Script to Delete All Collections
+delete_collections.js

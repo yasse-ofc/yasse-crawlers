@@ -3,7 +3,7 @@ import {useState, useRef} from 'react';
 
 function DropdownType() {
     const [open, setOpen] = useState(false);
-    const dropdownRef = useRef(null);
+    const dropdownRef = useRef<Node>(null);
     
     window.addEventListener('click', (e) => {
         if (open && dropdownRef.current?.contains(e.target as Node)) {
