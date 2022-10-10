@@ -23,12 +23,13 @@
   - Store Anime data;
   - Store Novel data;
   - Store Film data;
-  - User interface system to maintain lists of sources and mangas.
+  - User interface system to maintain lists of sources and mangas;
+  - Providing of API features to anyone who wants to use it in the internet.
 --------------
 ## 2.3- Software System Attributes
-  - User of Node.js Puppeteer for automation;
-  - Use of crawlers to populate the database.
-  - WIP
+  - Use of Node.js Puppeteer for automation;
+  - Use of crawlers to populate the database;
+  - Use of RedisDB for other websites to use through authentication in the DB registry.
 
 ### 2.3.1- Reliability
   - WIP
