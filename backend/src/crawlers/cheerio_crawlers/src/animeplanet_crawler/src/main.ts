@@ -6,15 +6,17 @@ dotenv.config();
 
 const startUrls = [ 'https://www.anime-planet.com/anime/watch-online/alpha?page=1' ];
 
-export const crawler = new CheerioCrawler({
-    proxyConfiguration: new ProxyConfiguration({
-        proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
-    }),
-    requestHandler: router,
-});
+export async function runCrawler() {
+    const crawler = new CheerioCrawler({
+        proxyConfiguration: new ProxyConfiguration({
+            proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
+        }),
+        requestHandler: router,
+    });
 
-log.info( '[ANIMEPLANET] Fetching...' );
+    log.info( '[ANIMEPLANET] Fetching...' );
 
-await crawler.run( startUrls );
+    await crawler.run( startUrls );
 
-log.info( '[ANIMEPLANET] Fetched all pages.' );
+    log.info( '[ANIMEPLANET] Fetched all pages.' );
+}

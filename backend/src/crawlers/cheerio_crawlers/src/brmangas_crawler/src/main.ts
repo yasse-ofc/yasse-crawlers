@@ -6,15 +6,17 @@ dotenv.config();
 
 const startUrls = [ 'https://www.brmangas.net/lista-de-manga' ];
 
-export const crawler = new CheerioCrawler({
-    proxyConfiguration: new ProxyConfiguration({
-        proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
-    }),
-    requestHandler: router,
-});
+export async function runCrawler() {
+    const crawler = new CheerioCrawler({
+        proxyConfiguration: new ProxyConfiguration({
+            proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
+        }),
+        requestHandler: router,
+    });
 
-log.info( '[BRMANGAS] Fetching...' );
+    log.info( '[BRMANGAS] Fetching...' );
 
-await crawler.run( startUrls );
+    await crawler.run( startUrls );
 
-log.info( '[BRMANGAS] Fetched all pages.' );
+    log.info( '[BRMANGAS] Fetched all pages.' );
+}

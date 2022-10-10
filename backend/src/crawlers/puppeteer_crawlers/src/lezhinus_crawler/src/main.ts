@@ -13,15 +13,17 @@ const startUrls = [
     'https://www.lezhinus.com/en/general?page=5&sub_tags=all',
 ];
 
-export const crawler = new PuppeteerCrawler({
-    proxyConfiguration: new ProxyConfiguration({
-        proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
-    }),
-    requestHandler: router,
-});
+export async function runCrawler() {
+    const crawler = new PuppeteerCrawler({
+        proxyConfiguration: new ProxyConfiguration({
+            proxyUrls: [ `http://${ process.env.PROXY_USERNAME }:${ process.env.PROXY_PASS }@p.webshare.io:80` ]
+        }),
+        requestHandler: router,
+    });
 
-log.info( '[LEZHINUS] Fetching...' );
+    log.info( '[LEZHINUS] Fetching...' );
 
-await crawler.run( startUrls );
+    await crawler.run( startUrls );
 
-log.info( '[LEZHINUS] Fetched all pages.' );
+    log.info( '[LEZHINUS] Fetched all pages.' );
+}

@@ -218,7 +218,7 @@ Known ports used in this project:
 
 - `Express API: 3000`
 - `Frontend: 80`
-- `MongoDB:`
+- `MongoDB: 27017`
 
 ### Commit Messages
 
