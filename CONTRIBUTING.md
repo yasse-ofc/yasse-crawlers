@@ -171,6 +171,9 @@ cd ../http_crawlers && npm i
 cd ../puppeteer_crawlers && npm i
 cd ../../db && npm i
 cd ../.. && touch .env
+git branch dev
+git checkout dev
+git pull upstream dev
 ```
 
 Set up `.env` file inside the `backend` folder as following:

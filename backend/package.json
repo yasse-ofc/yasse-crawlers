@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "start": "ts-node-esm -T ./src/api/api.ts",
+    "start_test": "ts-node-esm -T ./src/db/src/create_db.ts",
     "start_all_crawlers": "concurrently \"npm:*_crawler\"",
     
     "9anime_crawler": "ts-node-esm -T ./src/crawlers/cheerio_crawlers/src/9anime_crawler/src/main.ts",

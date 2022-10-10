@@ -33,7 +33,7 @@ export async function searchDB( searchTerm: string, collectionToSearch: string )
         { projection: { _id: 0 } }
     ).toArray();
     
-    client.close();
+    await client.close();
     
     return result;
 }
