@@ -23,7 +23,8 @@ All types of contributions are encouraged and valued. See the [Table of Contents
   - [Your First Code Contribution](#your-first-code-contribution)
   - [Improving The Documentation](#improving-the-documentation)
 - [Styleguides](#styleguides)
-  - [Code](#code)
+  - [Code Standards](#code-standards)
+  - [How to setup your environment](#how-to-setup-your-environment)
   - [Commit Messages](#commit-messages)
 - [Join The Project Team](#join-the-project-team)
 - [Attribution](#attribution)
@@ -148,7 +149,7 @@ Updating, improving and correcting the documentation
 
 ## Styleguides
 
-### Code
+### Code Standards
 
 Use:
 
@@ -157,7 +158,21 @@ Use:
 - SCREAMING_SNAKE_CASE for constants which will never be reassigned or mutated;
 - camelCase for everything else.
 
-Set up .env file as following:
+### How to setup your environment
+
+Use the following commands:
+
+```bash
+git clone git@github.com:ed-henrique/yasse.git
+cd yasse/backend && npm i
+cd ../frontend && npm i
+cd ../backend/src/crawlers/cheerio_crawlers && npm i
+cd ../http_crawlers && npm i
+cd ../puppeteer_crawlers && npm i
+cd ../../db && npm i
+```
+
+Set up `.env` file inside the `backend` folder as following:
 
 ```.env
 PROXY_USERNAME=
