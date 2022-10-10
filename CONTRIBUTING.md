@@ -214,6 +214,12 @@ For the database, we are using [MongoDB](https://www.mongodb.com/). It's also fr
 10. Your link should be looking like this: `mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`;
 11. You are ready to go.
 
+Known ports used in this project:
+
+- `Express API: 3000`
+- `Frontend: 80`
+- `MongoDB:`
+
 ### Commit Messages
 
 Describe what you have done briefly. To make this easier, commit often, even if dealing with small changes.
