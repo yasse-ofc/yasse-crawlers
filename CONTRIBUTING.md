@@ -170,12 +170,22 @@ We are currently working with [Webshare](https://www.webshare.io/) proxies. You 
 1. Create an account in [Webshare](https://www.webshare.io/);
 2. Go inside your dashboard;
 3. Go to `Proxy > Rotating Proxy`;
-4. Get your `Proxy Username` and `Proxy Password` there and paste them in your `PROXY_USERNAME` and `PROXY_PASS` respectively.
+4. Get your `Proxy Username` and `Proxy Password` there and paste them in your `PROXY_USERNAME` and `PROXY_PASS` respectively;
 5. You are ready to go.
 
-`MONGODB_LINK` will look like this:
+For the database, we are using [MongoDB](https://www.mongodb.com/). It's also free, and the step by step to get your link is the following:
 
-`mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`
+1. Create an account in [MongoDB](https://www.mongodb.com/);
+2. Go to `Deployment > Database`;
+3. Go to `+Create`, then create a shared cluster hosted wherever and with any name;
+4. Create an `username` and random `password` and store them somewhere for the time being;
+5. Return to `Deployment > Database` and go to `Connect` in your DB;
+6. Select `Connect your application`;
+7. Copy the link given to you and paste it into your `MONGODB_LINK`;
+8. Change the `<password>` field to your created password;
+9. Add the `&keepAlive=true` to the end of your link;
+10. Your link should be looking like this: `mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`;
+11. You are ready to go.
 
 ### Commit Messages
 
