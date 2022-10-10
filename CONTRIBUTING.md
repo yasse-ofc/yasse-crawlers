@@ -160,10 +160,21 @@ Use:
 
 ### How to setup your environment
 
-Use the following commands:
+If you don't have node installed, do as following:
 
 ```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install node
+```
+
+Use the following commands to clone the rep and download all packages:
+
+```bash
+nvm 
 git clone git@github.com:ed-henrique/yasse.git
+git branch dev
+git checkout dev
+git pull upstream dev
 cd yasse/backend && npm i
 cd ../frontend && npm i
 cd ../backend/src/crawlers/cheerio_crawlers && npm i
@@ -171,9 +182,6 @@ cd ../http_crawlers && npm i
 cd ../puppeteer_crawlers && npm i
 cd ../../db && npm i
 cd ../.. && touch .env
-git branch dev
-git checkout dev
-git pull upstream dev
 ```
 
 Set up `.env` file inside the `backend` folder as following:
