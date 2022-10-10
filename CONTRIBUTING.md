@@ -165,6 +165,14 @@ PROXY_PASS=
 MONGODB_LINK=
 ```
 
+We are currently working with [Webshare](https://www.webshare.io/) proxies. You can get 10 proxies for free there, and that's enough for testing before submitting your code. To acquire your credentials do as following:
+
+1. Create an account in [Webshare](https://www.webshare.io/);
+2. Go inside your dashboard;
+3. Go to `Proxy > Rotating Proxy`;
+4. Get your `Proxy Username` and `Proxy Password` there and paste them in your `PROXY_USERNAME` and `PROXY_PASS` respectively.
+5. You are ready to go.
+
 `MONGODB_LINK` will look like this:
 
 `mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`
