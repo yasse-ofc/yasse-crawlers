@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "start": "ts-node-esm -T ./src/api/api.ts",
+    "start": "ts-node-esm -T ./src/api/src/api.ts",
     "start_test": "ts-node-esm -T ./src/db/src/create_db.ts",
     "start_all_crawlers": "concurrently \"npm:*_crawler\"",
     
