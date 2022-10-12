@@ -5,6 +5,6 @@
         "target": "ES2022",
     },
     "include": [
-        "./src/**/*"
+        "api.ts"
     ]
 }

@@ -8,6 +8,6 @@
         "lib": ["DOM"]
     },
     "include": [
-        "./src/**/*"
+        "./*_crawler/*"
     ]
 }

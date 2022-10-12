@@ -1,7 +1,7 @@
 import { HttpCrawler, ProxyConfiguration, log } from 'crawlee';
 import { OptionalId } from 'mongodb';
 import * as dotenv from 'dotenv';
-import { insertManyToDB } from '../../../../../db/src/insert_to_db.js';
+import { insertManyToDB } from '../../../db/insert_to_db';
 
 dotenv.config();
 

@@ -1,5 +1,5 @@
 import express from 'express';
-import { searchDB } from '../../db/src/db.js';
+import { searchDB } from '../db/db';
 
 const app = express();
 const PORT = 3000;

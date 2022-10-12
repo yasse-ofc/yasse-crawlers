@@ -1,5 +1,5 @@
 import { createPuppeteerRouter } from 'crawlee';
-import { insertOneToDB } from '../../../../../db/src/insert_to_db.js';
+import { insertOneToDB } from '../../../db/insert_to_db';
 
 export const router = createPuppeteerRouter();
 
