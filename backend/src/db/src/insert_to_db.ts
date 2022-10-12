@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv';
-import { Document, MongoClient, OptionalId } from 'mongodb';
+import { Document, OptionalId } from 'mongodb';
 import { client } from './create_db.js';
 
 dotenv.config();

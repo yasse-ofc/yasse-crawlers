@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 
 dotenv.config();
 
-const url = process.env.MONGODB_LINK;
+const url = process.env.MONGODB_LINK ?? '';
 const dbName = 'yasse';
 
 /** 
@@ -24,7 +24,7 @@ function formatSearch( searchTerm: string ): string {
 * @return List of JSON document with search results.
 */
 export async function searchDB( searchTerm: string, collectionToSearch: string ) {
-    const client = await MongoClient.connect( url );
+    const client: MongoClient = await MongoClient.connect( url );
     const db = client.db( dbName );
     const collection = db.collection( collectionToSearch );
     
