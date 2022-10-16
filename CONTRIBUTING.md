@@ -171,17 +171,8 @@ Use the following commands to clone the rep and download all packages:
 
 ```bash
 nvm 
-git clone git@github.com:ed-henrique/yasse.git
-git branch dev
-git checkout dev
-git pull upstream dev
-cd yasse/backend && npm i
-cd ../frontend && npm i
-cd ../backend/src/crawlers/cheerio_crawlers && npm i
-cd ../http_crawlers && npm i
-cd ../puppeteer_crawlers && npm i
-cd ../../db && npm i
-cd ../.. && touch .env
+git clone git@github.com:yasse-ofc/yasse-crawlers.git
+cd yasse-crawlers && npm i && touch .env
 ```
 
 Set up `.env` file inside the `backend` folder as following:
@@ -213,12 +204,6 @@ For the database, we are using [MongoDB](https://www.mongodb.com/). It's also fr
 9. Add the `&keepAlive=true` to the end of your link;
 10. Your link should be looking like this: `mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`;
 11. You are ready to go.
-
-Known ports used in this project:
-
-- `Express API: 3000`
-- `Frontend: 80`
-- `MongoDB: 27017`
 
 ### Commit Messages
 
