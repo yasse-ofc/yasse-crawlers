@@ -20,7 +20,7 @@
   "scripts": {
     "start": "ts-node-esm -T ./src/api/api.ts",
     "create": "ts-node-esm -T ./src/db/create_db.ts",
-    "delete": "ts-node-esm -T ./delete_collections.ts",
+    "delete": "ts-node-esm -T ./src/db/delete_collections.ts",
     "test": "jest --watchAll --verbose --detectOpenHandles"
   },
   "repository": {

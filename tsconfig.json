@@ -7,11 +7,6 @@
         "noUnusedLocals": false,
         "lib": ["DOM"]
     },
-    "typeAcquisition": {
-        "include": [
-            "jest"
-        ]
-    },
     "include": [
         "./src/**/*",
     ],

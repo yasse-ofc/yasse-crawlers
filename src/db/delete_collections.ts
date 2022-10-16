@@ -9,13 +9,7 @@ const dbName = 'yasse';
 const client = await MongoClient.connect(url);
 const db = client.db(dbName);
 
-const collections = [
-  'manga',
-  'novel',
-  'webtoon',
-  'anime',
-  'test'
-];
+const collections = await db.listCollections().map(el => el.name).toArray();
 
 for (let i = 0; i < collections.length; i++) {
   const collection = db.collection(collections[i]);
