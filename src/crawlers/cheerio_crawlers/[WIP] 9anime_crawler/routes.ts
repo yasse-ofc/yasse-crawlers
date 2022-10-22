@@ -17,7 +17,7 @@ router.addDefaultHandler( async ( { $, request, enqueueLinks } ) => {
         const title = $( series ).find( '.dynamic-name' ).text().toLowerCase();
         const href = 'https://9anime.vc' + $( series ).find('.dynamic-name').attr('href');
         const img = $( series ).find( '.film-poster-img' ).attr( 'data-src' );
-        const latestChapter = $( series ).find( '.fdi-duration' ).text().split( '/' )[ 0 ].slice( 41 );
+        const latestChapter = parseInt( $( series ).find( '.fdi-duration' ).text().split( '/' )[ 0 ].slice( 41 ) );
         const source = '9animes';
         
         await insertOneToDB( 'anime', {

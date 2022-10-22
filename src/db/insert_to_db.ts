@@ -11,11 +11,11 @@ const dbName = 'yasse';
  * @param {string} collection - Collection of the DB to store the data.
  * @param {string} document - document to add to DB.
  */
-export const insertOneToDB = async ( source: string, collection: string, document: OptionalId<Document> ) => {
+export const insertOneToDB = async ( collection: string, document: OptionalId<Document> ) => {
     const db = client.db( dbName );
     
     const collectionToInsert = db.collection( collection );
-    await collectionToInsert.updateOne( { source: source }, document, { upsert: true } );
+    await collectionToInsert.insertOne( document );
 };
 
 /** 
@@ -23,9 +23,9 @@ export const insertOneToDB = async ( source: string, collection: string, documen
  * @param {string} collection - Collection of the DB to store the data.
  * @param {string} documents - List of documents to add to DB.
  */
-export const insertManyToDB = async ( source: string, collection: string, documents: OptionalId<Document>[] ) => {
+export const insertManyToDB = async ( collection: string, documents: OptionalId<Document>[] ) => {
     const db = client.db( dbName );
     
     const collectionToInsert = db.collection( collection );
-    await collectionToInsert.updateMany( { source: source }, documents, { upsert: true } );
+    await collectionToInsert.insertMany( documents );
 };

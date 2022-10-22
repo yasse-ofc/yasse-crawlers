@@ -1,5 +1,5 @@
 import { createCheerioRouter } from 'crawlee';
-import { insertOneToDB } from '../../../db/insert_to_db';
+import { insertOneToDB } from '../../../db/insert_to_db.js';
 
 export const router = createCheerioRouter();
 
@@ -22,7 +22,7 @@ router.addHandler( 'series_page', async ( { $, request } ) => {
     const title = $( '.titulo' ).eq( 0 ).text().slice( 4, -7 ).toLowerCase();
     const href = request.url;
     const img = $( '.img-responsive' ).eq( 1 ).attr( 'src' );
-    const latestChapter = $( '.lista_ep a' ).eq( -1 ).text().slice( 9 );
+    const latestChapter = parseFloat( $( '.lista_ep a' ).eq( -1 ).text().slice( 9 ) );
     const source = 'brmangas';
 
     await insertOneToDB( 'manga', {
